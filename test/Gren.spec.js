@@ -557,11 +557,12 @@ describe('Gren', () => {
     describe('_transformTagsIntoReleaseObjects', () => {
         it('Should transform tags into release objects', () => {
             const tag = { 'tag': { 'name': 'tagName', 'number': 3 }, 'releaseId': '12315', 'date': '2020-02-20T13:40:16Z' };
+            tag.commit = { 'committer': { date: '2020-02-21T13:40:16Z' } };
 
             const receivedObject = gren._transformTagsIntoReleaseObjects([tag]);
 
-            assert.equal(1, receivedObject.length)
-            assert.equal(tag.date, receivedObject[0].date);
+            assert.equal(1, receivedObject.length);
+            assert.equal(tag.commit.committer.date, receivedObject[0].date);
             assert.equal(tag.releaseId, receivedObject[0].id);
             assert.equal(tag.tag.name, receivedObject[0].name);
         });
@@ -642,7 +643,7 @@ describe('Gren', () => {
         describe('_getReleaseBlocks', () => {
             it('more than one tag', done => {
                 gren.options.tags = ['0.17.2', '0.17.1'];
-                gren.options.dataSource = "commits";
+                gren.options.dataSource = 'commits';
                 gren._getReleaseBlocks()
                     .then(releaseBlocks => {
                         assert.isArray(releaseBlocks, 'The releaseBlocks is an Array');
@@ -656,7 +657,7 @@ describe('Gren', () => {
 
             it('just one tag', done => {
                 gren.options.tags = ['0.17.2'];
-                gren.options.dataSource = "commits";
+                gren.options.dataSource = 'commits';
                 gren._getReleaseBlocks()
                     .then(releaseBlocks => {
                         assert.isArray(releaseBlocks, 'The releaseBlocks is an Array');
