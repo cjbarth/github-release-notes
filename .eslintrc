@@ -57,6 +57,7 @@ rules:
     prefer-promise-reject-errors: 0
     valid-typeof: 0
 overrides:
+  -
     files:
         - "*.spec.js"
     env:
