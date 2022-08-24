@@ -6,9 +6,7 @@ const gulpIf = require('gulp-if');
 
 gulp.task('scripts', done => {
     gulp.src('./lib/src/**/*.js')
-        .pipe(babel({
-            presets: ['es2015']
-        }))
+        .pipe(babel())
         .pipe(gulp.dest('dist'));
 
     gulp.src('./lib/src/**/*.json')
