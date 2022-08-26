@@ -1,5 +1,81 @@
 # Changelog
 
+## v1.0.1 (01/04/2022)
+- [Update release-it to auto-build](https://github.com/cjbarth/github-release-notes/commit/dbdcfd9a27a260d88952c2fc8319fcf2d3116367) - @cjbarth
+- [Update README for new project name](https://github.com/cjbarth/github-release-notes/commit/dc1a6d5285d4921cdf3b63891ee69a7a413655d0) - @cjbarth
+- [Fix broken build by rolling back eslint updates](https://github.com/cjbarth/github-release-notes/commit/0d0336f6d285f97c2003b6cfe0813542802b64d7) - @cjbarth
+- [Release 1.0.1](https://github.com/cjbarth/github-release-notes/commit/8bd16d19cbc26bd77a73983423a20556df88f519) - @cjbarth
+
+---
+
+## v1.0.0 (01/04/2022)
+- [Update packages, semver-minor](https://github.com/cjbarth/github-release-notes/commit/bd75ecfeb3d21eb3dcf81faf6a4595c4755a136e) - @cjbarth
+- [Update packages, semver-major](https://github.com/cjbarth/github-release-notes/commit/ec3c201f6bacc0d98da7046d6107b2deccfb2812) - @cjbarth
+- [Release 1.0.0](https://github.com/cjbarth/github-release-notes/commit/25698b89794422434caf8667dbee156e4fa25275) - @cjbarth
+
+---
+
+## v0.18.0 (25/09/2021)
+- [fix: index out of range bug (#289)](https://github.com/cjbarth/github-release-notes/commit/62c9289306d4b9abd7170d0fbdf29b25a4dd112c) - @HarikrishnanBalagopal
+- [Fix failing test (#281)](https://github.com/cjbarth/github-release-notes/commit/6734707b88da3d150f349ecb366861a4d835bd52) - @pachirel
+- [Add group post processor (#286)](https://github.com/cjbarth/github-release-notes/commit/458289f05ac3a2b45c8ccaf5eddee2d2a4234525) - @yogevbd
+- [Bump node-fetch from 1.7.3 to 2.6.1 (#280)](https://github.com/cjbarth/github-release-notes/commit/8b94c98f4795b293693d48bf4fc57754371e79a3) - @dependabot[bot]
+- [Bump lodash from 4.17.15 to 4.17.19 (#275)](https://github.com/cjbarth/github-release-notes/commit/305e5c67073223d4da830448432407d978fee0cc) - @dependabot[bot]
+- [Return exit code 1 on error for gren changelog (#294)](https://github.com/cjbarth/github-release-notes/commit/69b77665dddb1135a81ce856a7c8edb1003dbc45) - @viatrix
+- [docs: add viatrix as a contributor (#297)](https://github.com/cjbarth/github-release-notes/commit/8beb6f013cdfe410a0c20cd48291efe4c92a8ace) - @allcontributors[bot]
+- [Update supported NodeJS versions to current (#291)](https://github.com/cjbarth/github-release-notes/commit/ff0ddae3938db3cfcca5ef317d74eee034c32cc5) - @cjbarth
+- [Correctly compare dates for PR retrieval](https://github.com/cjbarth/github-release-notes/commit/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a) - @cjbarth
+- [Use commit date as tag date](https://github.com/cjbarth/github-release-notes/commit/ed9fc746a3e7256c8cadb02571e606d0645cb7d9) - @cjbarth
+- [Track PRs, commits by branch, not date](https://github.com/cjbarth/github-release-notes/commit/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f) - @cjbarth
+- [Correctly compare dates for PR retrieval; fix tests](https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a) - @cjbarth
+- [Fix tests](https://github.com/cjbarth/github-release-notes/commit/718b9aea68980bcdb49a3436414de58ae9832230) - @cjbarth
+- [Fix tests](https://github.com/cjbarth/github-release-notes/commit/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde) - @cjbarth
+- [Add release-it](https://github.com/cjbarth/github-release-notes/commit/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c) - @cjbarth
+- [Update package.json](https://github.com/cjbarth/github-release-notes/commit/f2fea79abb3300381744faed0d11ef539ddf676c) - @cjbarth
+- [Release 0.18.0](https://github.com/cjbarth/github-release-notes/commit/2f4719d4a9997ae8d38db4cf1fe1e71183f35f59) - @cjbarth
+
+---
+
+## v0.17.3 (29/04/2020)
+- [Release 0.17.3](https://github.com/cjbarth/github-release-notes/commit/8c5affc496f7b787fa0793ce3f7b812354d5679f) - @alexcanessa
+
+---
+
+## v0.17.2 (27/04/2020)
+- [Update CHANGELOG.md](https://github.com/cjbarth/github-release-notes/commit/998418715993d042cfb0b2bb4eb72bae105cc583) - @alexcanessa
+- [docs: update README.md [skip ci]](https://github.com/cjbarth/github-release-notes/commit/8191996ff9ab25a6afadab92d397c842dd6eb4fe) - @allcontributors[bot]
+- [docs: create .all-contributorsrc [skip ci]](https://github.com/cjbarth/github-release-notes/commit/754ba2105677a36cbfce40bf4d89fbd0c6daeefb) - @allcontributors[bot]
+- [docs: add wellDan28 as a contributor (#233)](https://github.com/cjbarth/github-release-notes/commit/a3013a9a4be5b2fe3fd34a8e5ac360b5da10d88a) - @allcontributors[bot]
+- [docs: add phun-ky as a contributor (#234)](https://github.com/cjbarth/github-release-notes/commit/a53c582fe24e1f86584490994d65a534a27c965c) - @allcontributors[bot]
+- [docs: add phun-ky as a contributor (#236)](https://github.com/cjbarth/github-release-notes/commit/f1aa847bf93f648454a5c927e8dcfdf765aa6c87) - @allcontributors[bot]
+- [docs: add joaquin-corchero as a contributor (#237)](https://github.com/cjbarth/github-release-notes/commit/2d42289c1188ecc0eaa2173ae4f59f9fe583d8fd) - @allcontributors[bot]
+- [docs: add durera as a contributor (#238)](https://github.com/cjbarth/github-release-notes/commit/fef3af185cb8d274c7daad818e093409887508ff) - @allcontributors[bot]
+- [docs: add wellDan28 as a contributor (#239)](https://github.com/cjbarth/github-release-notes/commit/7a89479b04d1c8e72defc6e5e072410d606b464c) - @allcontributors[bot]
+- [docs: add kyeah as a contributor (#240)](https://github.com/cjbarth/github-release-notes/commit/bb21a304cd42c7ae59497424cf55b0dd262cc50f) - @allcontributors[bot]
+- [docs: add mariotacke as a contributor (#241)](https://github.com/cjbarth/github-release-notes/commit/55eff0e9ca479fe4d0d667adf73ffc9a74bb1ebb) - @allcontributors[bot]
+- [docs: add kstolte as a contributor (#242)](https://github.com/cjbarth/github-release-notes/commit/b5b9ed6c231601d79f497f3561146f1b1f2610c1) - @allcontributors[bot]
+- [docs: add jackocnr as a contributor (#243)](https://github.com/cjbarth/github-release-notes/commit/be6a8d877272d1db672d0b88d9439517a03ab295) - @allcontributors[bot]
+- [docs: add david-poindexter as a contributor (#244)](https://github.com/cjbarth/github-release-notes/commit/727c4b46db5517cbcbb72381aa08d24c08572fe2) - @allcontributors[bot]
+- [docs: add pawk as a contributor (#245)](https://github.com/cjbarth/github-release-notes/commit/fbc6e54b0a576a357bd467a8f896eb16b4b153b8) - @allcontributors[bot]
+- [docs: add fthomas as a contributor (#246)](https://github.com/cjbarth/github-release-notes/commit/680ab9204d670d273937bad506f4f0d78f1e8f10) - @allcontributors[bot]
+- [docs: add Atry as a contributor (#247)](https://github.com/cjbarth/github-release-notes/commit/0014a4316dcc7c31f90294a49ce023b61871f4b1) - @allcontributors[bot]
+- [docs: add v1v as a contributor (#248)](https://github.com/cjbarth/github-release-notes/commit/9581cbea9cf3672da0dc9848c8beb5eb816632c2) - @allcontributors[bot]
+- [docs: add Tybot204 as a contributor (#249)](https://github.com/cjbarth/github-release-notes/commit/2a96857845f19e42e4050d10501524959f34a7eb) - @allcontributors[bot]
+- [docs: add blairg23 as a contributor (#250)](https://github.com/cjbarth/github-release-notes/commit/9416199f36269f0c2736ff1aac46859661692fbb) - @allcontributors[bot]
+- [docs: add lianghx-319 as a contributor (#251)](https://github.com/cjbarth/github-release-notes/commit/7e6ac0f340afa3901946e7c411a4cc5a8e18580b) - @allcontributors[bot]
+- [Move contributors badge](https://github.com/cjbarth/github-release-notes/commit/617cb77fe9a710556c367e459b9bf7088d9538a5) - @alexcanessa
+- [Fix issue #255 (#256)](https://github.com/cjbarth/github-release-notes/commit/f6240b114f71a37bd6d2eba4ea7a78183bbd8dee) - @donmahallem
+- [docs: add donmahallem as a contributor (#257)](https://github.com/cjbarth/github-release-notes/commit/e88aa4036c38f2e701ef34fec4696b8f0b61cb5f) - @allcontributors[bot]
+- [Update README.md (#260)](https://github.com/cjbarth/github-release-notes/commit/d76ad547a6ad7b2d1c03ba872c8ce8096a7ef78e) - @aelbozie
+- [docs: add aelbozie as a contributor (#261)](https://github.com/cjbarth/github-release-notes/commit/ac8f1b9d51cadcd495ab3f33bb2657e2015932e0) - @allcontributors[bot]
+- [[Bugfix] Some Pull Requests/Issues/CommitBlocks are missing when generating release notes (#263)](https://github.com/cjbarth/github-release-notes/commit/0e4d800c12e8d2409c23c1d718fe165c8dbe16b5) - @monicaribeiro
+- [docs: add monicarib as a contributor (#264)](https://github.com/cjbarth/github-release-notes/commit/d234c45d48eee220d4289222cf0532c3ea139419) - @allcontributors[bot]
+- [Bump minimist from 1.2.0 to 1.2.2 (#266)](https://github.com/cjbarth/github-release-notes/commit/a804e56af6f7d459b868c17dae33940e31d7daeb) - @dependabot[bot]
+- [Bump minimist from 1.2.2 to 1.2.3 (#268)](https://github.com/cjbarth/github-release-notes/commit/6fd0957fbc16f3214f639a642a6a98e9f01af8c1) - @dependabot[bot]
+- [Release 0.17.2](https://github.com/cjbarth/github-release-notes/commit/fc605360405f9bd658b56f38e9a1de325ab39b26) - @alexcanessa
+
+---
+
 ## v0.17.1 (12/12/2019)
 
 #### Enhancements:
