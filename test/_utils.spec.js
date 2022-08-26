@@ -196,7 +196,7 @@ describe('_utils.js', () => {
     });
 
     describe('getConfigFromRemote', () => {
-        const grenRemote = 'https://raw.githubusercontent.com/FEMessage/github-release-notes/master/.grenrc.js';
+        const grenRemote = 'https://raw.githubusercontent.com/cjbarth/github-release-notes/master/.grenrc.js';
         const grenrc = require(process.cwd() + '/.grenrc.js');
 
         it('Should fetch config from remote url', () => {

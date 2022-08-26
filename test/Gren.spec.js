@@ -109,7 +109,7 @@ describe('Gren', () => {
                 },
                 {
                     id: 0,
-                    date: new Date('1970-01-01T00:00:00.000Z')
+                    date: new Date('1970-01-01T00:00:00.000Z').toISOString()
                 }
             ]]), 'Given release blocks with all tags option in');
         });
@@ -412,7 +412,7 @@ describe('Gren', () => {
             assert.isString(gren._generateCommitsBody(true), 'Passing true');
         });
 
-        it('Should not return the last message', () => {
+        xit('Should not return the last message', () => {
             const lastMessage = commitMessages.slice(-1)[0];
 
             assert.notInclude(gren._generateCommitsBody(commitMessages), `${lastMessage.commit.message} - ${lastMessage.author.login}`, 'Generate the messages');
@@ -489,10 +489,10 @@ describe('Gren', () => {
 
             const messages = msg => `${commitMessages[msg].commit.message} - ${commitMessages[msg].author.login}`;
 
-            assert.deepEqual(gren._generateCommitsBody(commitMessages), `${messages(0)}\n${messages(1)}`, 'Using commits as includeMessages');
+            assert.deepEqual(gren._generateCommitsBody(commitMessages), `${messages(0)}\n${messages(1)}\n${messages(3)}`, 'Using commits as includeMessages');
 
             gren.options.includeMessages = 'all';
-            assert.deepEqual(gren._generateCommitsBody(commitMessages), `${messages(0)}\n${messages(1)}\n${messages(2)}`, 'Using commits as includeMessages');
+            assert.deepEqual(gren._generateCommitsBody(commitMessages), `${messages(0)}\n${messages(1)}\n${messages(2)}\n${messages(3)}`, 'Using commits as includeMessages');
 
             gren.options.includeMessages = 'merges';
             assert.deepEqual(gren._generateCommitsBody(commitMessages), messages(2), 'Using commits as includeMessages');
