@@ -1,4 +1,6 @@
 module.exports = {
+    "dataSource": "commits",
+    "tags": "all",
     "prefix": "v",
     "ignoreIssuesWith": [
         "duplicate",
@@ -6,6 +8,8 @@ module.exports = {
         "invalid",
         "help wanted"
     ],
+    username: "cjbarth",
+    repo: "github-release-notes",
     "template": {
         "issue": "- [{{text}}]({{url}}) {{name}}"
     },

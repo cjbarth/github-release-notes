@@ -13,3 +13,5 @@ test/
 .jsdoc.conf.json
 .travis.yml
 .nyc_output
+.babelrc
+.release-it.json
