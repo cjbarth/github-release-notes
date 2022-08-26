@@ -43,6 +43,11 @@
     description: 'The informations you want to use to build release notes. [issues]'
     defaultValue: issues
 -
+    short: '-h'
+    name: head
+    valueType: '<string>'
+    description: 'Which branch would you like to include commits from after the last tag?'
+-
     short: '-N'
     name: include-messages
     valueType: '<merge|commits|all>'
