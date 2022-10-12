@@ -2,6 +2,8 @@
 
 ## v2.1.0 (12/10/2022)
 - [Limit commits to specified branch](https://github.com/cjbarth/github-release-notes/commit/40bc9b13c69c46f70fe89a13c88e385834d02e64) - @cjbarth
+- [Update changelog](https://github.com/cjbarth/github-release-notes/commit/c2d01f485bc725c0f5b98b142771591cc842b0f7) - @cjbarth
+- [Adjust tests to support new features](https://github.com/cjbarth/github-release-notes/commit/4cd37e9163785570c59de913fb9ecca95f9ddeab) - @cjbarth
 
 ---
 
