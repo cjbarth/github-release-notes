@@ -1,5 +1,23 @@
 # Changelog
 
+## vmaster (12/10/2022)
+
+
+---
+
+## v2.0.0 (26/08/2022)
+- [Fix issue with outdated Babel presets](https://github.com/cjbarth/github-release-notes/commit/00cd40446e4adb927df84e8a1afa4585a296a390) - @cjbarth
+- [Update code to support >= commander@7](https://github.com/cjbarth/github-release-notes/commit/f012addeb9c8f35aa4ee48650ed5716d2ff9db14) - @cjbarth
+- [Enforce date types when checking to retrieve more pages of PRs](https://github.com/cjbarth/github-release-notes/commit/757ae32a42ce822b4b7235cb6312784ca95086b5) - @cjbarth
+- [Try semver tag sort when no date is available](https://github.com/cjbarth/github-release-notes/commit/3583b208c14550fb7f459354d85202d94790b0dc) - @cjbarth
+- [Update dotfiles for this fork](https://github.com/cjbarth/github-release-notes/commit/1fda4b2db38f347db96d4db59f3826ea9277f7f6) - @cjbarth
+- [Update tests for fork and new features](https://github.com/cjbarth/github-release-notes/commit/59f222ac706c5cf0c1737158552cd8482aeb7ea4) - @cjbarth
+- [Add option to get commits since last tag; don't skip any commits](https://github.com/cjbarth/github-release-notes/commit/73ba41a7dd926bc9e65e379ae5916736fd78ad18) - @cjbarth
+- [Update changelog](https://github.com/cjbarth/github-release-notes/commit/2ba7ee5d15e69085234e3b112191a966ed32ad7b) - @cjbarth
+- [Release 2.0.0](https://github.com/cjbarth/github-release-notes/commit/7024505d127242a55822a8cd76b36ea6ba4829f8) - @cjbarth
+
+---
+
 ## v1.0.1 (01/04/2022)
 - [Update release-it to auto-build](https://github.com/cjbarth/github-release-notes/commit/dbdcfd9a27a260d88952c2fc8319fcf2d3116367) - @cjbarth
 - [Update README for new project name](https://github.com/cjbarth/github-release-notes/commit/dc1a6d5285d4921cdf3b63891ee69a7a413655d0) - @cjbarth
