@@ -1,7 +1,7 @@
 # Changelog
 
-## vmaster (12/10/2022)
-
+## v2.1.0 (12/10/2022)
+- [Limit commits to specified branch](https://github.com/cjbarth/github-release-notes/commit/40bc9b13c69c46f70fe89a13c88e385834d02e64) - @cjbarth
 
 ---
 
