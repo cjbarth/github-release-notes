@@ -72,7 +72,7 @@ describe('Gren', () => {
             });
         });
 
-        it('Should return ranges of Objects', () => {
+        it('Should return ranges of Objects', async () => {
             const rangedBlocks = [
                 [
                     {
@@ -100,10 +100,10 @@ describe('Gren', () => {
                 ]
             ];
 
-            assert.deepEqual(gren._createReleaseRanges(blocks), rangedBlocks, 'Given release blocks');
-
+            assert.deepEqual(await gren._createReleaseRanges(blocks), rangedBlocks, 'Given release blocks');
+          
             gren.options.tags = 'all';
-            assert.deepEqual(gren._createReleaseRanges(blocks), rangedBlocks.concat([[
+            assert.deepEqual(await gren._createReleaseRanges(blocks), rangedBlocks.concat([[
                 {
                     date: '2016-09-01T23:00:00.000Z'
                 },
@@ -639,32 +639,28 @@ describe('Gren', () => {
         });
 
         describe('_getReleaseBlocks', () => {
-            it('more than one tag', done => {
+            it('more than one tag', async () => {
                 gren.options.tags = ['0.17.2', '0.17.1'];
                 gren.options.dataSource = 'commits';
-                gren._getReleaseBlocks()
+                await gren._getReleaseBlocks()
                     .then(releaseBlocks => {
                         assert.isArray(releaseBlocks, 'The releaseBlocks is an Array');
                         releaseBlocks.forEach(block => {
                             assert.hasAllKeys(block, ['id', 'release', 'name', 'published_at', 'body']);
                         });
-                        done();
                     })
-                    .catch(err => done(err));
             }).timeout(10000);
 
-            it('just one tag', done => {
+            it('just one tag', async () => {
                 gren.options.tags = ['0.17.2'];
                 gren.options.dataSource = 'commits';
-                gren._getReleaseBlocks()
+                await gren._getReleaseBlocks()
                     .then(releaseBlocks => {
                         assert.isArray(releaseBlocks, 'The releaseBlocks is an Array');
                         releaseBlocks.forEach(block => {
                             assert.hasAllKeys(block, ['id', 'release', 'name', 'published_at', 'body']);
                         });
-                        done();
                     })
-                    .catch(err => done(err));
             }).timeout(10000);
         });
     });

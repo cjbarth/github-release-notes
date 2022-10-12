@@ -6,6 +6,8 @@
     "scripts": {
         "changelog": "node bin/gren.js changelog --override --generate --head master",
         "build": "gulp build",
+        "prerelease": "git clean -xfd && npm ci && npm test && npm run build",
+        "release": "release-it",
         "start": "node github-release-notes.js",
         "test": "./node_modules/.bin/nyc mocha --reporter=nyan --require @babel/register",
         "coverage": "nyc --reporter=lcov --reporter=text mocha --require @babel/register",
