@@ -64,7 +64,7 @@ describe('_utils.js', () => {
 
     describe('formatDate', () => {
         it('Should return the string of the formatted date', () => {
-            assert.deepEqual(utils.formatDate(new Date(0)), '01/01/1970', 'Given a date object.');
+            assert.deepEqual(utils.formatDate(new Date(0)), '1970-01-01', 'Given a date object.');
         });
     });
 
