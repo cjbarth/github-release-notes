@@ -1,5 +1,17 @@
 # Changelog
 
+## v4.0.0 (2023-04-12)
+
+- [Build changelog as part of release process](https://github.com/cjbarth/github-release-notes/commit/3e87029e162fdaa1a7e542e906152e4da5ac0d7b) - @cjbarth
+- [Update to release-it@15](https://github.com/cjbarth/github-release-notes/commit/cb70224198557df28fb122766131bf84608dcfdc) - @cjbarth
+- [Update changelog to follow new standards](https://github.com/cjbarth/github-release-notes/commit/2f27d03e4441ce4243bcc956d95b8cf339a42f5c) - @cjbarth
+- [Update all semver-minor dependencies](https://github.com/cjbarth/github-release-notes/commit/a372f19c67bfec2993c3740f9e386771852ced73) - @cjbarth
+- [Update can-i-use data](https://github.com/cjbarth/github-release-notes/commit/5edb4b770b49135beaeb8e08ae9a7bd75ac434ca) - @cjbarth
+- [Make default template more compatible with markdown lint](https://github.com/cjbarth/github-release-notes/commit/f83261ad19b570ec28a2fff4d8d0db1ddfc97e94) - @cjbarth
+- [Make default date format ISO](https://github.com/cjbarth/github-release-notes/commit/2d5cd34fddf102dfe3a32545c9cb6dc49e3e8b75) - @cjbarth
+
+---
+
 ## v3.0.1 (2023-04-11)
 
 - [Release 3.0.1](https://github.com/cjbarth/github-release-notes/commit/9a1c586c10982040379c2c13a5b41822cc9c3bc0) - @cjbarth
