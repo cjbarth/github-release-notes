@@ -1,7 +1,17 @@
 # Changelog
 
+## v4.1.0 (2023-07-14)
+
+- [Add basic workflow for PR testing before merge (#5)](https://github.com/cjbarth/github-release-notes/commit/346d5ff6d90bbcde5d3a6264e63d250168daeebb) - @cjbarth
+- [Adjust tests to account for default branch (#4)](https://github.com/cjbarth/github-release-notes/commit/fdc118304f58692165a95b31de8fed299479f3ae) - @cjbarth
+- [Use current branch as default branch (#3)](https://github.com/cjbarth/github-release-notes/commit/16b30918eec4a2e73e4164880904034f9a457d50) - @cjbarth
+- [Move eslint `env` config to .eslintrc (#2)](https://github.com/cjbarth/github-release-notes/commit/0693fee0d7219bcf488a1adc5c97656aabdec298) - @cjbarth
+
+---
+
 ## v4.0.0 (2023-04-12)
 
+- [Release 4.0.0](https://github.com/cjbarth/github-release-notes/commit/934e728b5e87e941a5f5f2bcef457e47e423f41b) - @cjbarth
 - [Build changelog as part of release process](https://github.com/cjbarth/github-release-notes/commit/3e87029e162fdaa1a7e542e906152e4da5ac0d7b) - @cjbarth
 - [Update to release-it@15](https://github.com/cjbarth/github-release-notes/commit/cb70224198557df28fb122766131bf84608dcfdc) - @cjbarth
 - [Update changelog to follow new standards](https://github.com/cjbarth/github-release-notes/commit/2f27d03e4441ce4243bcc956d95b8cf339a42f5c) - @cjbarth
