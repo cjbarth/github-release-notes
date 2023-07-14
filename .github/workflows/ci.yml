@@ -1,0 +1,39 @@
+name: Test Status
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    env:
+      CI: true
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [lts/-1, lts/*]
+        experimental: [false]
+        include:
+          - os: ubuntu-latest
+            node-version: latest
+            experimental: true
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+        
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm update
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
