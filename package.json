@@ -4,7 +4,7 @@
     "description": "Create a release from a tag and uses issues or commits to creating the release notes. It also can generate a CHANGELOG.md file based on the release notes (or generate a brand new).",
     "main": "./github-release-notes.js",
     "scripts": {
-        "changelog": "node bin/gren.js changelog --override --generate --head master",
+        "changelog": "node bin/gren.js changelog --override --generate",
         "build": "gulp build",
         "prerelease": "git clean -xfd && npm ci && npm test && npm run build",
         "release": "release-it",
