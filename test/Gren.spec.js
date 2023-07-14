@@ -100,10 +100,13 @@ describe('Gren', () => {
                 ]
             ];
 
-            assert.deepEqual(await gren._createReleaseRanges(blocks), rangedBlocks, 'Given release blocks');
+            // Slice off the first element, which is the current release
+            const releaseRanges = await gren._createReleaseRanges(blocks);
+            assert.deepEqual(releaseRanges.slice(1), rangedBlocks, 'Given release blocks');
           
             gren.options.tags = 'all';
-            assert.deepEqual(await gren._createReleaseRanges(blocks), rangedBlocks.concat([[
+            const allReleaseRanges = await gren._createReleaseRanges(blocks);
+            assert.deepEqual(allReleaseRanges.slice(1), rangedBlocks.concat([[
                 {
                     date: '2016-09-01T23:00:00.000Z'
                 },
