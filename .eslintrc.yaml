@@ -1,5 +1,7 @@
 parser: babel-eslint
 env:
+    node: true
+    mocha: true
     es6: true
 parserOptions:
     ecmaVersion: 6
@@ -21,8 +23,7 @@ rules:
     indent:
         - error
         - 4
-        -
-            SwitchCase: 1
+        - SwitchCase: 1
     space-before-function-paren:
         - error
         - never
@@ -33,9 +34,8 @@ rules:
     consistent-return: error
     no-multiple-empty-lines:
         - error
-        -
-            max: 1
-            maxBOF: 0
+        - max: 1
+          maxBOF: 0
     no-lonely-if: error
     new-parens: error
     eol-last: error
@@ -45,20 +45,17 @@ rules:
         - as-needed
     prefer-arrow-callback:
         - error
-        -
-            allowNamedFunctions: true
+        - allowNamedFunctions: true
     prefer-destructuring:
         - error
-        -
-            object: true
-            array: false
+        - object: true
+          array: false
     prefer-spread: error
     prefer-rest-params: error
     prefer-promise-reject-errors: 0
     valid-typeof: 0
 overrides:
-  -
-    files:
-        - "*.spec.js"
-    env:
-        mocha: true
+    - files:
+          - "*.spec.js"
+      env:
+          mocha: true

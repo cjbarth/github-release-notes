@@ -27,9 +27,6 @@ gulp.task('lint', () => {
         .pipe(
             eslint({
                 fix: true,
-                envs: [
-                    'node'
-                ]
             })
         )
         .pipe(eslint.format())
