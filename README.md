@@ -12,6 +12,20 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+Updates:
+
+Since this package was forked, many changes have been made to support my particular use-case.
+
+- I only desire to make changelogs based on merged PRs.
+- I feel that the process should be idempotent, so I focus on rebuilding the entire file each time.
+- The order of the commits/PRs should be in descending order and none should be excluded.
+- The produced file should pass a markdown linter (e.g. markdownlint)
+- For compatibility with release tools, the PRs that have landed since the last tag should be included.
+- The latest version number should appear at the top of the changelog.
+- Because not all commits you need to track changes of have PRs (security vulnerabilities), there is an `overridePrs` config value for which you can specify PRs to be included.
+  - It should return a function that returns a list of PRs.
+  - It will be passed the current list of PRs.
+
 ## OK, what can `gren` do for me?
 
 `gren` is a small helpful robot that will do for you just create a release from a tag and compile the release notes using issues or commits.
@@ -38,17 +52,17 @@ The process, [as explained here](https://help.github.com/articles/creating-relea
 Let `gren` take care of that for you. It automates this process and also writes release notes for you, creating something like this:
 
 > ## v0.6.0 (14/03/2017)
-> 
-> #### Framework Enhancements:
-> 
+>
+> #### Framework Enhancements
+>
 > - [#32](https://github.com/github-tools/github-release-notes/issues/32) Unwrap github-api promises
 > - [#26](https://github.com/github-tools/github-release-notes/issues/26) Use external config file
 > - [#23](https://github.com/github-tools/github-release-notes/issues/23) Introduce templates for the issues
 > - [#19](https://github.com/github-tools/github-release-notes/issues/19) Add an "ignore label" flag
 > - [#12](https://github.com/github-tools/github-release-notes/issues/12) Add the chance to rebuild the history of release notes
-> 
-> #### Bug Fixes:
-> 
+>
+> #### Bug Fixes
+>
 > - [#29](https://github.com/github-tools/github-release-notes/issues/29) Remove escaping character on regex
 > - [#24](https://github.com/github-tools/github-release-notes/issues/24) The changelog action doesn't compile latest release
 
@@ -86,13 +100,13 @@ Even though it doesn't require a machine-readable commit, it is still better to 
 The output then uses commit messages (title + description) to look something like:
 
 > ## v0.9.0 (17/05/2017)
-> 
+>
 > - Filter milestones (#75)
->     * Create milestones data-source option
->     * Add documentation for the milestones option
+>   - Create milestones data-source option
+>   - Add documentation for the milestones option
 > - Support GitHub enterprise (#73)
->     * Support GitHub enterprise
->     * Add api-url to options documentation
+>   - Support GitHub enterprise
+>   - Add api-url to options documentation
 > - Update CHANGELOG.md
 
 #### Help 🤖 to write wonderful stuff (commits)
