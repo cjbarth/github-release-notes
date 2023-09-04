@@ -1,1 +1,1 @@
-require('./bin/gren.js');
+require("./bin/gren.js");

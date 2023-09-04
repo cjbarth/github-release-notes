@@ -8,8 +8,11 @@
 [![Codecov](https://codecov.io/gh/github-tools/github-release-notes/branch/master/graph/badge.svg)](https://codecov.io/gh/github-tools/github-release-notes/branch/master)
 [![npm downloads](https://img.shields.io/npm/dm/github-release-notes.svg)](https://www.npmjs.com/package/github-release-notes)
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Updates:
@@ -132,7 +135,7 @@ npm install github-release-notes -g
 ### Setup
 
 First, generate a `GitHub token`, _with **repo** scope_, at [this link](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
-Then add this line to  `~/.bash_profile` (or `~/.zshrc`):
+Then add this line to `~/.bash_profile` (or `~/.zshrc`):
 
 ```shell
 export GREN_GITHUB_TOKEN=your_token_here
