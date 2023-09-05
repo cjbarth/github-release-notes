@@ -1,11 +1,21 @@
 # Changelog
 
+## v4.2.0 (2023-09-05)
+
+- [Format using prettier (#9)](https://github.com/cjbarth/github-release-notes/commit/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44) - @cjbarth
+- [Update README (#8)](https://github.com/cjbarth/github-release-notes/commit/bb476de6b36057ef694b55002e3877b88f93b0ab) - @cjbarth
+- [Use application version number for head of changelog (#7)](https://github.com/cjbarth/github-release-notes/commit/aaae7e0b07fa2078dec4096074a061aaf40a0439) - @cjbarth
+- [Add support for overriding discovered PRs](https://github.com/cjbarth/github-release-notes/commit/f6086f143cba6f76a867023439cf183a8345b682) - @cjbarth
+
+---
+
 ## v4.1.0 (2023-07-14)
 
 - [Add basic workflow for PR testing before merge (#5)](https://github.com/cjbarth/github-release-notes/commit/346d5ff6d90bbcde5d3a6264e63d250168daeebb) - @cjbarth
 - [Adjust tests to account for default branch (#4)](https://github.com/cjbarth/github-release-notes/commit/fdc118304f58692165a95b31de8fed299479f3ae) - @cjbarth
 - [Use current branch as default branch (#3)](https://github.com/cjbarth/github-release-notes/commit/16b30918eec4a2e73e4164880904034f9a457d50) - @cjbarth
 - [Move eslint `env` config to .eslintrc (#2)](https://github.com/cjbarth/github-release-notes/commit/0693fee0d7219bcf488a1adc5c97656aabdec298) - @cjbarth
+- [Release 4.1.0](https://github.com/cjbarth/github-release-notes/commit/c09f024a189c2a3494c21a85cce9f04e4b986995) - @cjbarth
 
 ---
 
