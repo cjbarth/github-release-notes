@@ -150,7 +150,7 @@
 
 ### Bug Fixes
 
-- [#229](https://github.com/github-tools/github-release-notes/issues/229) The number of  commits will be reduced by one when "--data-source=commits"
+- [#229](https://github.com/github-tools/github-release-notes/issues/229) The number of commits will be reduced by one when "--data-source=commits"
 - [#162](https://github.com/github-tools/github-release-notes/issues/162) Change in artifact name - Gren no longer creates release notes!
 - [#134](https://github.com/github-tools/github-release-notes/issues/134) Sort tags by date before fetching release notes
 
@@ -193,7 +193,7 @@
 
 ## v0.14.1 (2017-12-08)
 
-*No changelog for this release.*
+_No changelog for this release._
 
 ---
 
@@ -237,7 +237,7 @@
 
 ## v0.12.1 (2017-10-14)
 
-*No changelog for this release.*
+_No changelog for this release._
 
 ---
 
@@ -343,7 +343,7 @@
 
 ## v0.3.3 (2017-03-14)
 
-*No changelog for this release.*
+_No changelog for this release._
 
 ---
 
@@ -422,22 +422,22 @@
 
 ## v0.2.2 (2017-03-10)
 
-*No changelog for this release.*
+_No changelog for this release._
 
 ---
 
 ## v0.3.0 (2017-03-10)
 
-*No changelog for this release.*
+_No changelog for this release._
 
 ---
 
 ## v0.3.1 (2017-03-10)
 
-*No changelog for this release.*
+_No changelog for this release._
 
 ---
 
 ## v0.3.2 (2017-03-10)
 
-*No changelog for this release.*
+_No changelog for this release._

@@ -3,7 +3,6 @@
 ❤️ Thanks for contributing to this project.
 Following, you can find a couple of things to keep in mind before contributing to gren.
 
-
 1. [Issues](#issues)
 2. [Commits](#commits)
 3. [Branches](#branches)
@@ -53,6 +52,7 @@ The commit history in a PR should not contain `Merge` commits and should be reba
 It's easier to review the PR, if you rebase your commits so that every commit represents a sub-piece of the development and can be independently reviewed or a clear list of the features on that branch.
 
 e.g.
+
 ```
 Closes #123
 
@@ -62,4 +62,3 @@ Here any further informations needed to the reviewer, e.g. run yarn before revie
 ### Checks
 
 Every PR has to be reviewed before can be merged in.
-

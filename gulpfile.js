@@ -1,39 +1,33 @@
-const babel = require('gulp-babel');
-const chmod = require('gulp-chmod');
-const eslint = require('gulp-eslint');
-const gulp = require('gulp');
-const gulpIf = require('gulp-if');
+const babel = require("gulp-babel");
+const chmod = require("gulp-chmod");
+const eslint = require("gulp-eslint");
+const prettier = require("gulp-prettier");
+const gulp = require("gulp");
 
-gulp.task('scripts', done => {
-    gulp.src('./lib/src/**/*.js')
-        .pipe(babel())
-        .pipe(gulp.dest('dist'));
+gulp.task("scripts", (done) => {
+  gulp.src("./lib/src/**/*.js").pipe(babel()).pipe(gulp.dest("dist"));
 
-    gulp.src('./lib/src/**/*.json')
-        .pipe(gulp.dest('dist'));
+  gulp.src("./lib/src/**/*.json").pipe(gulp.dest("dist"));
 
-    gulp.src('./lib/*.js')
-        .pipe(babel())
-        .pipe(chmod(0o755))
-        .pipe(gulp.dest('bin'));
+  gulp.src("./lib/*.js").pipe(babel()).pipe(chmod(0o755)).pipe(gulp.dest("bin"));
 
-    done();
+  done();
 });
 
-gulp.task('lint', () => {
-    const isFixed = file => file.eslint != null && file.eslint.fixed;
+gulp.task("lint", () =>
+  gulp
+    .src("./lib/**/*.js")
+    .pipe(
+      eslint({
+        fix: true,
+      }),
+    )
+    .pipe(eslint.format())
+    .pipe(prettier())
+    .pipe(gulp.dest("./lib/")),
+);
 
-    return gulp.src('./lib/**/*.js')
-        .pipe(
-            eslint({
-                fix: true,
-            })
-        )
-        .pipe(eslint.format())
-        .pipe(gulpIf(isFixed, gulp.dest('./lib/')));
-});
+gulp.task("watch", () => gulp.watch("./lib/**/*.js", gulp.series(["lint", "scripts"])));
 
-gulp.task('watch', () => gulp.watch('./lib/**/*.js', gulp.series(['lint', 'scripts'])));
-
-gulp.task('build', gulp.series(['lint', 'scripts']));
-gulp.task('default', gulp.series(['build', 'watch']));
+gulp.task("build", gulp.series(["lint", "scripts"]));
+gulp.task("default", gulp.series(["build", "watch"]));

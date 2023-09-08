@@ -22,7 +22,7 @@ jobs:
             experimental: true
     runs-on: ${{ matrix.os }}
     continue-on-error: ${{ matrix.experimental }}
-        
+
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
@@ -36,4 +36,3 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-
