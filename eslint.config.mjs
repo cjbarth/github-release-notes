@@ -1,4 +1,4 @@
-import js from "@eslint/js";
+import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import importPlugin from "eslint-plugin-import";
 import mochaPlugin from "eslint-plugin-mocha";
@@ -9,7 +9,7 @@ import globals from "globals";
 
 export default defineConfig([
   globalIgnores(["docs/**", "dist/**", "bin/**"]),
-  js.configs.recommended,
+  eslint.configs.recommended,
   mochaPlugin.configs.flat.recommended,
   importPlugin.flatConfigs.recommended,
   pluginPromise.configs["flat/recommended"],
