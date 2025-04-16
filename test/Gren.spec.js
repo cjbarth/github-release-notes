@@ -491,7 +491,7 @@ describe("Gren", () => {
       assert.isString(gren._generateCommitsBody(true), "Passing true");
     });
 
-    xit("Should not return the last message", () => {
+    it("Should return the last message", () => {
       assert.deepEqual(
         gren._generateCommitsBody([
           {
