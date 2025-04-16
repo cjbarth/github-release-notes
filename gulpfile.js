@@ -1,7 +1,5 @@
 const babel = require("gulp-babel");
 const chmod = require("gulp-chmod");
-const eslint = require("gulp-eslint");
-const prettier = require("gulp-prettier");
 const gulp = require("gulp");
 
 gulp.task("scripts", (done) => {
@@ -14,20 +12,5 @@ gulp.task("scripts", (done) => {
   done();
 });
 
-gulp.task("lint", () =>
-  gulp
-    .src("./lib/**/*.js")
-    .pipe(
-      eslint({
-        fix: true,
-      }),
-    )
-    .pipe(eslint.format())
-    .pipe(prettier())
-    .pipe(gulp.dest("./lib/")),
-);
-
-gulp.task("watch", () => gulp.watch("./lib/**/*.js", gulp.series(["lint", "scripts"])));
-
-gulp.task("build", gulp.series(["lint", "scripts"]));
-gulp.task("default", gulp.series(["build", "watch"]));
+gulp.task("build", gulp.series(["scripts"]));
+gulp.task("default", gulp.series(["build"]));
