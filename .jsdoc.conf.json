@@ -18,6 +18,6 @@
     "destination": "./docs/",
     "encoding": "utf8",
     "private": true,
-    "template": "./node_modules/minami"
+    "template": "node_modules/clean-jsdoc-theme"
   }
 }

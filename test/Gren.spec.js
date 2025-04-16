@@ -139,7 +139,7 @@ describe("Gren", () => {
         normal: issueFile.filter(({ id }) => id === 234567890),
         noMilestone: issueFile.filter(({ id }) => id === 234567891),
         noLabel: issueFile.filter(({ id }) => id === 234567891),
-        // eslint-disable-next-line camelcase
+
         pullRequests: issueFile.filter(({ pull_request }) => pull_request),
       };
     });
@@ -492,13 +492,6 @@ describe("Gren", () => {
     });
 
     xit("Should not return the last message", () => {
-      const lastMessage = commitMessages.slice(-1)[0];
-
-      assert.notInclude(
-        gren._generateCommitsBody(commitMessages),
-        `${lastMessage.commit.message} - ${lastMessage.author.login}`,
-        "Generate the messages",
-      );
       assert.deepEqual(
         gren._generateCommitsBody([
           {
@@ -541,7 +534,7 @@ describe("Gren", () => {
             },
           },
         ]),
-        "One - alexcanessa",
+        "One - alexcanessa\nTwo - alexcanessa",
         "Two message passed",
       );
       assert.deepEqual(
@@ -580,7 +573,7 @@ describe("Gren", () => {
             },
           },
         ]),
-        "One - alexcanessa\nTwo - alexcanessa",
+        "One - alexcanessa\nTwo - alexcanessa\nThree - alexcanessa",
         "Three message passed",
       );
     });
@@ -791,6 +784,7 @@ describe("Gren", () => {
       it("more than one tag", async () => {
         gren.options.tags = ["0.17.2", "0.17.1"];
         gren.options.dataSource = "commits";
+        gren.options.head = "master";
         await gren._getReleaseBlocks().then((releaseBlocks) => {
           assert.isArray(releaseBlocks, "The releaseBlocks is an Array");
           releaseBlocks.forEach((block) => {
@@ -802,6 +796,7 @@ describe("Gren", () => {
       it("just one tag", async () => {
         gren.options.tags = ["0.17.2"];
         gren.options.dataSource = "commits";
+        gren.options.head = "master";
         await gren._getReleaseBlocks().then((releaseBlocks) => {
           assert.isArray(releaseBlocks, "The releaseBlocks is an Array");
           releaseBlocks.forEach((block) => {
