@@ -95,11 +95,11 @@
 - [Update package.json](https://github.com/cjbarth/github-release-notes/commit/f2fea79abb3300381744faed0d11ef539ddf676c) - @cjbarth
 - [Add release-it](https://github.com/cjbarth/github-release-notes/commit/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c) - @cjbarth
 - [Fix tests](https://github.com/cjbarth/github-release-notes/commit/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde) - @cjbarth
-- [Track PRs, commits by branch, not date](https://github.com/cjbarth/github-release-notes/commit/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f) - @cjbarth
 - [Fix tests](https://github.com/cjbarth/github-release-notes/commit/718b9aea68980bcdb49a3436414de58ae9832230) - @cjbarth
+- [Correctly compare dates for PR retrieval; fix tests](https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a) - @cjbarth
+- [Track PRs, commits by branch, not date](https://github.com/cjbarth/github-release-notes/commit/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f) - @cjbarth
 - [Use commit date as tag date](https://github.com/cjbarth/github-release-notes/commit/ed9fc746a3e7256c8cadb02571e606d0645cb7d9) - @cjbarth
 - [Correctly compare dates for PR retrieval](https://github.com/cjbarth/github-release-notes/commit/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a) - @cjbarth
-- [Correctly compare dates for PR retrieval; fix tests](https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a) - @cjbarth
 - [Update supported NodeJS versions to current (#291)](https://github.com/cjbarth/github-release-notes/commit/ff0ddae3938db3cfcca5ef317d74eee034c32cc5) - @cjbarth
 - [docs: add viatrix as a contributor (#297)](https://github.com/cjbarth/github-release-notes/commit/8beb6f013cdfe410a0c20cd48291efe4c92a8ace) - @allcontributors[bot]
 - [Return exit code 1 on error for gren changelog (#294)](https://github.com/cjbarth/github-release-notes/commit/69b77665dddb1135a81ce856a7c8edb1003dbc45) - @viatrix

@@ -1,36 +1,610 @@
 [
   {
-    "sha": "b8fd1b6a01ef30ba0f2458a86ebd56991a911e44",
-    "node_id": "C_kwDOE4xentoAKGI4ZmQxYjZhMDFlZjMwYmEwZjI0NThhODZlYmQ1Njk5MWE5MTFlNDQ",
+    "sha": "62c9289306d4b9abd7170d0fbdf29b25a4dd112c",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjYyYzkyODkzMDZkNGI5YWJkNzE3MGQwZmJkZjI5YjI1YTRkZDExMmM=",
     "commit": {
       "author": {
-        "name": "Chris Barth",
-        "email": "chrisjbarth@hotmail.com",
-        "date": "2023-09-08T16:23:22Z"
+        "name": "HarikrishnanBalagopal",
+        "email": "harikrishmenon@gmail.com",
+        "date": "2020-12-17T11:56:09Z"
       },
       "committer": {
         "name": "GitHub",
         "email": "noreply@github.com",
-        "date": "2023-09-08T16:23:22Z"
+        "date": "2020-12-17T11:56:09Z"
       },
-      "message": "Format using prettier (#9)",
+      "message": "fix: index out of range bug (#289)\n\nThe for loop condition needs to depend\r\non the RANGE, otherwise it the index\r\nwill go out of range when we access\r\ni + RANGE - 1 inside the for loop.\r\n\r\nSigned-off-by: Harikrishnan Balagopal <harikrishmenon@gmail.com>",
       "tree": {
-        "sha": "6c60a4afc7b34058cea77b0db9e1a0d454d8d2c3",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/6c60a4afc7b34058cea77b0db9e1a0d454d8d2c3"
+        "sha": "622edf7b0dea7ad591b8ff3519a0d7aabf61db17",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/622edf7b0dea7ad591b8ff3519a0d7aabf61db17"
       },
-      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44",
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/62c9289306d4b9abd7170d0fbdf29b25a4dd112c",
       "comment_count": 0,
       "verification": {
         "verified": true,
         "reason": "valid",
-        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk+0p6CRBK7hj4Ov3rIwAAungIAE1eUxyEoYU26/cfUehGbsUL\nvqeF95uMOSCPC1xi50Fgw3rulkunW45VU05IFRJjR00ihuWCDGBIkgAzGej0yhmM\nS0gcgCQOQMzGbEkMY1fv9J/C/nHn3YWmFl/PmAg1NQRTNz3w4OzQnSxsVOcN1j50\n/Xn2cyepFIWXaFemI+K1PbxMXyKpukMRxBN0b8/Tkod5tVsGoY791oziqJspvjCF\nKWii8VIx7KALm7Fzd8GNr5FsiBbU0s5cCyMDAbQtHR2O/Hk+ee5b2/z1vM/7xaCe\nRfALgJmz27SyIvSfupOmEJlRKMpSzA3BR5Z0Ow1Ijm1PBJXK3OGaPohmk9HU/9U=\n=niy1\n-----END PGP SIGNATURE-----\n",
-        "payload": "tree 6c60a4afc7b34058cea77b0db9e1a0d454d8d2c3\nparent bb476de6b36057ef694b55002e3877b88f93b0ab\nauthor Chris Barth <chrisjbarth@hotmail.com> 1694190202 -0500\ncommitter GitHub <noreply@github.com> 1694190202 -0400\n\nFormat using prettier (#9)\n\n",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJf20dZCRBK7hj4Ov3rIwAAdHIIAEvwlILvHG0fEoD5NxFei2GP\nN9O5/Xs5gLSiDYQxATj86rfxYmWKkGfgxqiGou/60n+vg02i9NmO+2aIYva3uV71\n0NI0IsMwEGFQcBUZkzwUTHoxfoIHdGELAVH1+/XwJxbNVWk+ffxZLZn6vYeEKbAh\nnOqZb5uFtzJrBeLIBmbYSAeytbFllNyy9QMZSzJP2BQ8Nxi2i7kDkejhrSefYOgS\nwcr6DQ48fq/caNmC454xjjrBvnu239Vb+bNTAp0/m8ewRtGjhAaX1+jgL/SSQEJg\n902CcJ1ItJNCkWKHEgpUcRKH3DR23exJviqhXaR4exSArI/mg24o4BwYC+1W7Vg=\n=YCwJ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 622edf7b0dea7ad591b8ff3519a0d7aabf61db17\nparent 8c5affc496f7b787fa0793ce3f7b812354d5679f\nauthor HarikrishnanBalagopal <harikrishmenon@gmail.com> 1608206169 +0530\ncommitter GitHub <noreply@github.com> 1608206169 +0100\n\nfix: index out of range bug (#289)\n\nThe for loop condition needs to depend\r\non the RANGE, otherwise it the index\r\nwill go out of range when we access\r\ni + RANGE - 1 inside the for loop.\r\n\r\nSigned-off-by: Harikrishnan Balagopal <harikrishmenon@gmail.com>",
         "verified_at": "2024-01-16T19:59:59Z"
       }
     },
-    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44",
-    "html_url": "https://github.com/cjbarth/github-release-notes/commit/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44",
-    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44/comments",
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/62c9289306d4b9abd7170d0fbdf29b25a4dd112c",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/62c9289306d4b9abd7170d0fbdf29b25a4dd112c",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/62c9289306d4b9abd7170d0fbdf29b25a4dd112c/comments",
+    "author": {
+      "login": "HarikrishnanBalagopal",
+      "id": 20921177,
+      "node_id": "MDQ6VXNlcjIwOTIxMTc3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20921177?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/HarikrishnanBalagopal",
+      "html_url": "https://github.com/HarikrishnanBalagopal",
+      "followers_url": "https://api.github.com/users/HarikrishnanBalagopal/followers",
+      "following_url": "https://api.github.com/users/HarikrishnanBalagopal/following{/other_user}",
+      "gists_url": "https://api.github.com/users/HarikrishnanBalagopal/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/HarikrishnanBalagopal/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/HarikrishnanBalagopal/subscriptions",
+      "organizations_url": "https://api.github.com/users/HarikrishnanBalagopal/orgs",
+      "repos_url": "https://api.github.com/users/HarikrishnanBalagopal/repos",
+      "events_url": "https://api.github.com/users/HarikrishnanBalagopal/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/HarikrishnanBalagopal/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8c5affc496f7b787fa0793ce3f7b812354d5679f",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8c5affc496f7b787fa0793ce3f7b812354d5679f",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/8c5affc496f7b787fa0793ce3f7b812354d5679f"
+      }
+    ]
+  },
+  {
+    "sha": "6734707b88da3d150f349ecb366861a4d835bd52",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjY3MzQ3MDdiODhkYTNkMTUwZjM0OWVjYjM2Njg2MWE0ZDgzNWJkNTI=",
+    "commit": {
+      "author": {
+        "name": "Yuta Shimizu",
+        "email": "pachirel@gmail.com",
+        "date": "2020-12-17T11:56:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-12-17T11:56:58Z"
+      },
+      "message": "Fix failing test (#281)\n\n* Fix failing specs\r\n\r\n* Fix tests that require network\r\n\r\nTarget tags should be listed in the first 10.\r\n`gren.options.dataSource` seems required in `_getReleaseBlocks()`",
+      "tree": {
+        "sha": "3d68ab2529aa8942eb6c6ecaef538bfacbb640b8",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/3d68ab2529aa8942eb6c6ecaef538bfacbb640b8"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/6734707b88da3d150f349ecb366861a4d835bd52",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJf20eKCRBK7hj4Ov3rIwAAdHIIAJ7PH470peQWAittbEcxV8OD\nMGAlVVRugUgq7GASG1PFqjWq/0O6R21y6SSrXwgl9Gpzvmi8l+S3Ajq5mDuvKhdQ\nPDBgq2bsEbXn42mMMmqZEnIv3l+IDRtHs2afESfLRgRCOPwiadxLfk2LJ5Tx4wr0\nQoU2sWi8PAWJQgWDRWgLwdwp9ecVM6HPHd0XvywPblHfaH3wfKZsP28APyV6RfjR\n/W36ppd1cYHp14/kEkB2pRTX7cWzf0kspSD+y2KGfURn2TYpIi0I1ytEM6FKejsY\n44M24MgUqIPkbF1jHot3VC5LyEUNHRsNyNH3Z5eN9wsDeXElIlZ0377iRzG+5sY=\n=jW2Y\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 3d68ab2529aa8942eb6c6ecaef538bfacbb640b8\nparent 62c9289306d4b9abd7170d0fbdf29b25a4dd112c\nauthor Yuta Shimizu <pachirel@gmail.com> 1608206218 +0900\ncommitter GitHub <noreply@github.com> 1608206218 +0100\n\nFix failing test (#281)\n\n* Fix failing specs\r\n\r\n* Fix tests that require network\r\n\r\nTarget tags should be listed in the first 10.\r\n`gren.options.dataSource` seems required in `_getReleaseBlocks()`",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/6734707b88da3d150f349ecb366861a4d835bd52",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/6734707b88da3d150f349ecb366861a4d835bd52",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/6734707b88da3d150f349ecb366861a4d835bd52/comments",
+    "author": {
+      "login": "pachirel",
+      "id": 440515,
+      "node_id": "MDQ6VXNlcjQ0MDUxNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/440515?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pachirel",
+      "html_url": "https://github.com/pachirel",
+      "followers_url": "https://api.github.com/users/pachirel/followers",
+      "following_url": "https://api.github.com/users/pachirel/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pachirel/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pachirel/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pachirel/subscriptions",
+      "organizations_url": "https://api.github.com/users/pachirel/orgs",
+      "repos_url": "https://api.github.com/users/pachirel/repos",
+      "events_url": "https://api.github.com/users/pachirel/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pachirel/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "62c9289306d4b9abd7170d0fbdf29b25a4dd112c",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/62c9289306d4b9abd7170d0fbdf29b25a4dd112c",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/62c9289306d4b9abd7170d0fbdf29b25a4dd112c"
+      }
+    ]
+  },
+  {
+    "sha": "458289f05ac3a2b45c8ccaf5eddee2d2a4234525",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjQ1ODI4OWYwNWFjM2EyYjQ1YzhjY2FmNWVkZGVlMmQyYTQyMzQ1MjU=",
+    "commit": {
+      "author": {
+        "name": "Yogev Ben David",
+        "email": "yogevbd@wix.com",
+        "date": "2020-12-17T11:57:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-12-17T11:57:49Z"
+      },
+      "message": "Add group post processor (#286)\n\n* Add post group formatter\r\n\r\n* Push dist and bin\r\n\r\n* Rename postGroupFormatter to groupPostProcessor\r\n\r\n* Revert \"Push dist and bin\"\r\n\r\nThis reverts commit 02d5b21de8fc93952b6e1e594e7e8a2a6a4e39ee.\r\n\r\n* f\r\n\r\n* f\r\n\r\n* remove clg",
+      "tree": {
+        "sha": "70b0d3079de0b7fddf6e5dffed9d2cf20e239d00",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/70b0d3079de0b7fddf6e5dffed9d2cf20e239d00"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/458289f05ac3a2b45c8ccaf5eddee2d2a4234525",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJf20e9CRBK7hj4Ov3rIwAAdHIIAB7o2k2/hvwYvA+3u0DOZA8G\n+7aIZPjpi+sZiqqtihGI6ZykhptmZkUtbvugwUhThH8k9eSdU7iQ5RnC5VMw91kP\nfapeQaXz53jU9N/QRG/w8CoJU54m1acJw4T+uFZUOwqAaVByV8Z0PMXDpaHhwgWd\nIc4Nn8m3sOFCqrn0KC/n0Pqut1ZWqs+jcMb1VMBNkfoPW2CYE2Tb+wk12prkEKxF\nrdvEEm2HaCt+eUfICkTlZRI+D8lptbkleVQ9I6pHx+eBpUrHHkgSvKOZpWbAQ+qx\nBdTadbowm5yWQfNSFCOOBIEeymJc99jfHBgoyKW85jU38GjW3wZ/x1LteVJX6wQ=\n=8Q3q\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 70b0d3079de0b7fddf6e5dffed9d2cf20e239d00\nparent 6734707b88da3d150f349ecb366861a4d835bd52\nauthor Yogev Ben David <yogevbd@wix.com> 1608206269 +0200\ncommitter GitHub <noreply@github.com> 1608206269 +0100\n\nAdd group post processor (#286)\n\n* Add post group formatter\r\n\r\n* Push dist and bin\r\n\r\n* Rename postGroupFormatter to groupPostProcessor\r\n\r\n* Revert \"Push dist and bin\"\r\n\r\nThis reverts commit 02d5b21de8fc93952b6e1e594e7e8a2a6a4e39ee.\r\n\r\n* f\r\n\r\n* f\r\n\r\n* remove clg",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/458289f05ac3a2b45c8ccaf5eddee2d2a4234525",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/458289f05ac3a2b45c8ccaf5eddee2d2a4234525",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/458289f05ac3a2b45c8ccaf5eddee2d2a4234525/comments",
+    "author": {
+      "login": "yogevbd",
+      "id": 10794586,
+      "node_id": "MDQ6VXNlcjEwNzk0NTg2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10794586?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yogevbd",
+      "html_url": "https://github.com/yogevbd",
+      "followers_url": "https://api.github.com/users/yogevbd/followers",
+      "following_url": "https://api.github.com/users/yogevbd/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yogevbd/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yogevbd/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yogevbd/subscriptions",
+      "organizations_url": "https://api.github.com/users/yogevbd/orgs",
+      "repos_url": "https://api.github.com/users/yogevbd/repos",
+      "events_url": "https://api.github.com/users/yogevbd/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yogevbd/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6734707b88da3d150f349ecb366861a4d835bd52",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/6734707b88da3d150f349ecb366861a4d835bd52",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/6734707b88da3d150f349ecb366861a4d835bd52"
+      }
+    ]
+  },
+  {
+    "sha": "8b94c98f4795b293693d48bf4fc57754371e79a3",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjhiOTRjOThmNDc5NWIyOTM2OTNkNDhiZjRmYzU3NzU0MzcxZTc5YTM=",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2020-12-17T11:58:10Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-12-17T11:58:10Z"
+      },
+      "message": "Bump node-fetch from 1.7.3 to 2.6.1 (#280)\n\nBumps [node-fetch](https://github.com/bitinn/node-fetch) from 1.7.3 to 2.6.1.\r\n- [Release notes](https://github.com/bitinn/node-fetch/releases)\r\n- [Changelog](https://github.com/node-fetch/node-fetch/blob/master/docs/CHANGELOG.md)\r\n- [Commits](https://github.com/bitinn/node-fetch/compare/1.7.3...v2.6.1)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "938df93140986216a8e547d5169becb5bb8648d6",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/938df93140986216a8e547d5169becb5bb8648d6"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/8b94c98f4795b293693d48bf4fc57754371e79a3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJf20fSCRBK7hj4Ov3rIwAAdHIIAAADEB8+cSr7bl/6H/9sFgql\nBrLgQdRIUAQILiDW5VPstc9C3XWlyIHhUA1a547Xmvzcl949+f5/otHb0WlZFZlP\nhZxswOhNZdku2oeqn6kVTtE6WmSFxtSBQnu6qXN3kRFYDc0rVe6QsMYWp4xodWrh\nnk/zblJWo0Sopc+8UC+kcD1MwsXmosIkXG9Ov314cjbsd+xvbptFSGVzD9Ke9jSC\n+uKiF3NVKGpIEbQoLlgA61q07UrQ2wyvNWGRhc7UXTzoZegaJx54B7QTyl7sJe2z\n+weXNxa5HVgLCsrBjSxt4J7NSa7kwMueqvReUA4r+0eqJjJ00P5nOdRRLGarsoI=\n=yj4j\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 938df93140986216a8e547d5169becb5bb8648d6\nparent 458289f05ac3a2b45c8ccaf5eddee2d2a4234525\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1608206290 +0100\ncommitter GitHub <noreply@github.com> 1608206290 +0100\n\nBump node-fetch from 1.7.3 to 2.6.1 (#280)\n\nBumps [node-fetch](https://github.com/bitinn/node-fetch) from 1.7.3 to 2.6.1.\r\n- [Release notes](https://github.com/bitinn/node-fetch/releases)\r\n- [Changelog](https://github.com/node-fetch/node-fetch/blob/master/docs/CHANGELOG.md)\r\n- [Commits](https://github.com/bitinn/node-fetch/compare/1.7.3...v2.6.1)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8b94c98f4795b293693d48bf4fc57754371e79a3",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/8b94c98f4795b293693d48bf4fc57754371e79a3",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8b94c98f4795b293693d48bf4fc57754371e79a3/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "458289f05ac3a2b45c8ccaf5eddee2d2a4234525",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/458289f05ac3a2b45c8ccaf5eddee2d2a4234525",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/458289f05ac3a2b45c8ccaf5eddee2d2a4234525"
+      }
+    ]
+  },
+  {
+    "sha": "305e5c67073223d4da830448432407d978fee0cc",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjMwNWU1YzY3MDczMjIzZDRkYTgzMDQ0ODQzMjQwN2Q5NzhmZWUwY2M=",
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "date": "2020-12-17T11:58:23Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-12-17T11:58:23Z"
+      },
+      "message": "Bump lodash from 4.17.15 to 4.17.19 (#275)\n\nBumps [lodash](https://github.com/lodash/lodash) from 4.17.15 to 4.17.19.\r\n- [Release notes](https://github.com/lodash/lodash/releases)\r\n- [Commits](https://github.com/lodash/lodash/compare/4.17.15...4.17.19)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "8bafd86e5a6026ad14d99224e09e33f93db7e6da",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/8bafd86e5a6026ad14d99224e09e33f93db7e6da"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/305e5c67073223d4da830448432407d978fee0cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJf20ffCRBK7hj4Ov3rIwAAdHIIAIQqpvtFFMfTSvtSLeQcyBbn\nZ+wOUOUSDqE6ddNvISL0KYtkgmz13yDloXGY+ZZ4NEsG6PuGmRwMG6X/vtoxdBFP\nEailJQqCQmZegtM4KGmIp7xaxk5S2zd5NMbUsHOUNFYF24JuoEVatRf7hl7QyDB0\n70kppqJ4bxoDrvTXGjpBN+QJpnHu22XF5VGzboY9WPdaOQM8XIwP8y+bvIG4npwG\nOhpUQWXjFyBXdR6ej8sRYFOVCjAYE2QKgU2s7pQQs4rNtaZdIHNjH1+YUgl+Fv8C\nwWxHbqHpl0VRr9DX8YsI+hmem/tf7hzahR1f62oDoww6ZaGqZMwqnFlNXOv5Z/0=\n=M0Hf\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8bafd86e5a6026ad14d99224e09e33f93db7e6da\nparent 8b94c98f4795b293693d48bf4fc57754371e79a3\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1608206303 +0100\ncommitter GitHub <noreply@github.com> 1608206303 +0100\n\nBump lodash from 4.17.15 to 4.17.19 (#275)\n\nBumps [lodash](https://github.com/lodash/lodash) from 4.17.15 to 4.17.19.\r\n- [Release notes](https://github.com/lodash/lodash/releases)\r\n- [Commits](https://github.com/lodash/lodash/compare/4.17.15...4.17.19)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/305e5c67073223d4da830448432407d978fee0cc",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/305e5c67073223d4da830448432407d978fee0cc",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/305e5c67073223d4da830448432407d978fee0cc/comments",
+    "author": {
+      "login": "dependabot[bot]",
+      "id": 49699333,
+      "node_id": "MDM6Qm90NDk2OTkzMzM=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+      "html_url": "https://github.com/apps/dependabot",
+      "followers_url": "https://api.github.com/users/dependabot%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dependabot%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/dependabot%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/dependabot%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dependabot%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8b94c98f4795b293693d48bf4fc57754371e79a3",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8b94c98f4795b293693d48bf4fc57754371e79a3",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/8b94c98f4795b293693d48bf4fc57754371e79a3"
+      }
+    ]
+  },
+  {
+    "sha": "69b77665dddb1135a81ce856a7c8edb1003dbc45",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjY5Yjc3NjY1ZGRkYjExMzVhODFjZTg1NmE3YzhlZGIxMDAzZGJjNDU=",
+    "commit": {
+      "author": {
+        "name": "Tanya Bushenyova",
+        "email": "viatrix.x@gmail.com",
+        "date": "2021-03-25T10:50:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-03-25T10:50:51Z"
+      },
+      "message": "Return exit code 1 on error for gren changelog (#294)",
+      "tree": {
+        "sha": "d526b7a10b16d51841f1f87a69f82bcedc31bc9b",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/d526b7a10b16d51841f1f87a69f82bcedc31bc9b"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/69b77665dddb1135a81ce856a7c8edb1003dbc45",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgXGsLCRBK7hj4Ov3rIwAAdHIIAJix64GXrhlA1xbpHGQ+eBq9\n7U7B6EeeS7V6k7ybYL0Q4CtLZuexCR7nb670JXRrH6z17qHgmnoYcO4tAiuJIx7O\n8D+VzEhy8C73Ddqw2q4aUckya3bxB/MTTvKN8zPERyrCkUcdBkk/ZkwksAkidgLM\n/xtkHL7yJvUtkoK2k1mDgj5jNog9aPVN9AiMoOIJBJ563kGVAMQ5ZuZMGnNCLR7s\n5zLyuFYk799yj10yRo0DCqcKos2CEz8MXsd59EW/tYKlZ/4jBPHs4lVuE+rR4Hs0\nj6fIkrJz7bQRrw7ms498rt64zJUfMWhpCIY8PRpEkXwHEgng/XTJ1f71WHIL+F8=\n=WHKF\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree d526b7a10b16d51841f1f87a69f82bcedc31bc9b\nparent 305e5c67073223d4da830448432407d978fee0cc\nauthor Tanya Bushenyova <viatrix.x@gmail.com> 1616669451 +0200\ncommitter GitHub <noreply@github.com> 1616669451 +0100\n\nReturn exit code 1 on error for gren changelog (#294)\n\n",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/69b77665dddb1135a81ce856a7c8edb1003dbc45",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/69b77665dddb1135a81ce856a7c8edb1003dbc45",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/69b77665dddb1135a81ce856a7c8edb1003dbc45/comments",
+    "author": {
+      "login": "viatrix",
+      "id": 16937734,
+      "node_id": "MDQ6VXNlcjE2OTM3NzM0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16937734?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/viatrix",
+      "html_url": "https://github.com/viatrix",
+      "followers_url": "https://api.github.com/users/viatrix/followers",
+      "following_url": "https://api.github.com/users/viatrix/following{/other_user}",
+      "gists_url": "https://api.github.com/users/viatrix/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/viatrix/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/viatrix/subscriptions",
+      "organizations_url": "https://api.github.com/users/viatrix/orgs",
+      "repos_url": "https://api.github.com/users/viatrix/repos",
+      "events_url": "https://api.github.com/users/viatrix/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/viatrix/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "305e5c67073223d4da830448432407d978fee0cc",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/305e5c67073223d4da830448432407d978fee0cc",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/305e5c67073223d4da830448432407d978fee0cc"
+      }
+    ]
+  },
+  {
+    "sha": "8beb6f013cdfe410a0c20cd48291efe4c92a8ace",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjhiZWI2ZjAxM2NkZmU0MTBhMGMyMGNkNDgyOTFlZmU0YzkyYThhY2U=",
+    "commit": {
+      "author": {
+        "name": "allcontributors[bot]",
+        "email": "46447321+allcontributors[bot]@users.noreply.github.com",
+        "date": "2021-03-25T10:51:23Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-03-25T10:51:23Z"
+      },
+      "message": "docs: add viatrix as a contributor (#297)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+      "tree": {
+        "sha": "fa9f48c0d0ea79038dafd3e0553b6ab57a6193ad",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/fa9f48c0d0ea79038dafd3e0553b6ab57a6193ad"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/8beb6f013cdfe410a0c20cd48291efe4c92a8ace",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgXGsrCRBK7hj4Ov3rIwAAdHIIAAr5YMeqt1vc3JJal2ArgzkJ\nGfc8UrXMeTtvsJck+P9Ga8UjlAW3UmgFYfNzNRHAW6IiGvyvFP9+O9IZOPodlAub\ni/qfoWBv2DgOkOaVP/xDNTHPUGbIXrcDzudlJ0+wPYmBMo4Rmn3JLLFQTA6QWVRh\nZhSBnhikRlhla5oW2ejBNOLxWz9GRcqGli4bBBHl9qce7nQL0T5AqA2rCno0IjxT\nThLX/dCS2IBStriYuwzv1wpdLETU6Rsuk9JtspwGv/f12Wyg32Q0si9R7Ynn2RH5\n4FpFuoQzcG0nIXuspibbGdc6TUa7Kjd32xxSTqEuL8Y6nMh5CIZqTSYnlM3NLoI=\n=djRZ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree fa9f48c0d0ea79038dafd3e0553b6ab57a6193ad\nparent 69b77665dddb1135a81ce856a7c8edb1003dbc45\nauthor allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com> 1616669483 +0100\ncommitter GitHub <noreply@github.com> 1616669483 +0100\n\ndocs: add viatrix as a contributor (#297)\n\n* docs: update README.md [skip ci]\r\n\r\n* docs: update .all-contributorsrc [skip ci]\r\n\r\nCo-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8beb6f013cdfe410a0c20cd48291efe4c92a8ace",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/8beb6f013cdfe410a0c20cd48291efe4c92a8ace",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8beb6f013cdfe410a0c20cd48291efe4c92a8ace/comments",
+    "author": {
+      "login": "allcontributors[bot]",
+      "id": 46447321,
+      "node_id": "MDM6Qm90NDY0NDczMjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/23186?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/allcontributors%5Bbot%5D",
+      "html_url": "https://github.com/apps/allcontributors",
+      "followers_url": "https://api.github.com/users/allcontributors%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/allcontributors%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/allcontributors%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/allcontributors%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/allcontributors%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/allcontributors%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/allcontributors%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/allcontributors%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/allcontributors%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "69b77665dddb1135a81ce856a7c8edb1003dbc45",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/69b77665dddb1135a81ce856a7c8edb1003dbc45",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/69b77665dddb1135a81ce856a7c8edb1003dbc45"
+      }
+    ]
+  },
+  {
+    "sha": "ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OmZmMGRkYWUzOTM4ZGIzY2ZjY2E1ZWYzMTdkNzRlZWUwMzRjMzJjYzU=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-03-25T10:59:07Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-03-25T10:59:07Z"
+      },
+      "message": "Update supported NodeJS versions to current (#291)",
+      "tree": {
+        "sha": "7c79135b4e4f27e5d9fbcc505d486ba5dc7ef43e",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/7c79135b4e4f27e5d9fbcc505d486ba5dc7ef43e"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgXGz7CRBK7hj4Ov3rIwAAdHIIABw6zktAI+SSMXs6091b6TwQ\nhgBwaqNRZ7qk9aikEkxdgsezvC1lQ/yLDpj3M5oSaAJgx67/4EauQ8FPBjfI3pUb\n3V2POfxNq/vQoNeKZjSyYvpwYfcGPZCh7Ox6ewKRnUD8BVr+NRVQvJPQY70tkRRu\nrc9hy5+Pwtjvajbl4P5kbGnw7Cqq3v7lX3yfK7MyomtDBQ5Xd+eTwl4ivimznf3f\nGRMgVzzfSNFKMnVlkej8S6K0Lg6IKtx6idCquLOGUG+EOUcGvKPdlfv6l0lMooHA\n6MDYv0iBhWqAMmzrljqh8dMoZjhNeuO8/In5V0PMOEFNy6EzErnXeeDMZKjSszg=\n=Aksh\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7c79135b4e4f27e5d9fbcc505d486ba5dc7ef43e\nparent 8beb6f013cdfe410a0c20cd48291efe4c92a8ace\nauthor Chris Barth <chrisjbarth@hotmail.com> 1616669947 -0400\ncommitter GitHub <noreply@github.com> 1616669947 +0100\n\nUpdate supported NodeJS versions to current (#291)\n\n",
+        "verified_at": "2024-11-07T18:32:55Z"
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ff0ddae3938db3cfcca5ef317d74eee034c32cc5/comments",
     "author": {
       "login": "cjbarth",
       "id": 3049726,
@@ -75,196 +649,32 @@
     },
     "parents": [
       {
-        "sha": "bb476de6b36057ef694b55002e3877b88f93b0ab",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/bb476de6b36057ef694b55002e3877b88f93b0ab",
-        "html_url": "https://github.com/cjbarth/github-release-notes/commit/bb476de6b36057ef694b55002e3877b88f93b0ab"
+        "sha": "8beb6f013cdfe410a0c20cd48291efe4c92a8ace",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/8beb6f013cdfe410a0c20cd48291efe4c92a8ace",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/8beb6f013cdfe410a0c20cd48291efe4c92a8ace"
       }
     ]
   },
   {
-    "sha": "bb476de6b36057ef694b55002e3877b88f93b0ab",
-    "node_id": "C_kwDOE4xentoAKGJiNDc2ZGU2YjM2MDU3ZWY2OTRiNTUwMDJlMzg3N2I4OGY5M2IwYWI",
+    "sha": "e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OmU1M2Y5ZTdmNmFmZjRiMzJkYzNmN2U2Y2NkY2ExZjlkNzY3ZWFmMWE=",
     "commit": {
       "author": {
         "name": "Chris Barth",
         "email": "chrisjbarth@hotmail.com",
-        "date": "2023-09-05T19:23:15Z"
-      },
-      "committer": {
-        "name": "GitHub",
-        "email": "noreply@github.com",
-        "date": "2023-09-05T19:23:15Z"
-      },
-      "message": "Update README (#8)",
-      "tree": {
-        "sha": "1f3a1a8ce9b0f95da539db0741d46cf09124921d",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/1f3a1a8ce9b0f95da539db0741d46cf09124921d"
-      },
-      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/bb476de6b36057ef694b55002e3877b88f93b0ab",
-      "comment_count": 0,
-      "verification": {
-        "verified": true,
-        "reason": "valid",
-        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk94AjCRBK7hj4Ov3rIwAA8RQIAEXghEJ/ix7cuJF56ytuJcD0\nix5vNNG+FjWwOPSIqdrWBGv5qHQ25GJDopiZ/voIoQwQhnDbEVVR2tZeZw7a7Pvs\nxAvzNjW+vVQWsuMGitb57lCpSBqJVbEaW3JnItOdLnrd6UCRGpqKxOUkGTD4wo0B\n86iLYNjB+1b65y6graXMmUvSrQDEZlNb23bcQk5Q+8kWGBVhz6Tj5CznE1YMbzKC\nT0tGlM6YBnmtWZTaT68IX5cSEumosK5Ax5zLKkOld6WDje9Sn9LGIvEwXrGe/wd3\n/mO1PDTjXmgvLQLLo1sFE+YWWPGlTmrFlItCOddXGrYCcBuN4NXqtVDcY/U7hj0=\n=+eH7\n-----END PGP SIGNATURE-----\n",
-        "payload": "tree 1f3a1a8ce9b0f95da539db0741d46cf09124921d\nparent aaae7e0b07fa2078dec4096074a061aaf40a0439\nauthor Chris Barth <chrisjbarth@hotmail.com> 1693941795 -0400\ncommitter GitHub <noreply@github.com> 1693941795 -0400\n\nUpdate README (#8)\n\n",
-        "verified_at": "2024-01-16T19:59:59Z"
-      }
-    },
-    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/bb476de6b36057ef694b55002e3877b88f93b0ab",
-    "html_url": "https://github.com/cjbarth/github-release-notes/commit/bb476de6b36057ef694b55002e3877b88f93b0ab",
-    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/bb476de6b36057ef694b55002e3877b88f93b0ab/comments",
-    "author": {
-      "login": "cjbarth",
-      "id": 3049726,
-      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/cjbarth",
-      "html_url": "https://github.com/cjbarth",
-      "followers_url": "https://api.github.com/users/cjbarth/followers",
-      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
-      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
-      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
-      "repos_url": "https://api.github.com/users/cjbarth/repos",
-      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "committer": {
-      "login": "web-flow",
-      "id": 19864447,
-      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/web-flow",
-      "html_url": "https://github.com/web-flow",
-      "followers_url": "https://api.github.com/users/web-flow/followers",
-      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-      "organizations_url": "https://api.github.com/users/web-flow/orgs",
-      "repos_url": "https://api.github.com/users/web-flow/repos",
-      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/web-flow/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "parents": [
-      {
-        "sha": "aaae7e0b07fa2078dec4096074a061aaf40a0439",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/aaae7e0b07fa2078dec4096074a061aaf40a0439",
-        "html_url": "https://github.com/cjbarth/github-release-notes/commit/aaae7e0b07fa2078dec4096074a061aaf40a0439"
-      }
-    ]
-  },
-  {
-    "sha": "aaae7e0b07fa2078dec4096074a061aaf40a0439",
-    "node_id": "C_kwDOE4xentoAKGFhYWU3ZTBiMDdmYTIwNzhkZWM0MDk2MDc0YTA2MWFhZjQwYTA0Mzk",
-    "commit": {
-      "author": {
-        "name": "Chris Barth",
-        "email": "chrisjbarth@hotmail.com",
-        "date": "2023-09-05T19:16:56Z"
-      },
-      "committer": {
-        "name": "GitHub",
-        "email": "noreply@github.com",
-        "date": "2023-09-05T19:16:56Z"
-      },
-      "message": "Use application version number for head of changelog (#7)",
-      "tree": {
-        "sha": "78d9e155595efc0096126868b1b524c7ec68ed5e",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/78d9e155595efc0096126868b1b524c7ec68ed5e"
-      },
-      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/aaae7e0b07fa2078dec4096074a061aaf40a0439",
-      "comment_count": 0,
-      "verification": {
-        "verified": true,
-        "reason": "valid",
-        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk936oCRBK7hj4Ov3rIwAAAQUIAFoeYFp0j8tdBOHWbax0UaZ6\n9V+ByAkX7gKu5ft1XZkA8TlXhXwK5scfNTD6YAH/5RXXlRrixK18ThYiQCi2Aolu\nW70mpl28uG8LumEYTzRHsT9U1SyczbfYQxJXPIjBYOb9RTl1bpDKt+HAYpjJMZNq\nPcXRz4rDKBlKnxoiWv9n6QToXYAb9HYohBzjniGw/yBfmt5NtpWBetNswI1hFGOM\nM4Bl9+FG37zdTmiRFu94hrOW3LSsya+spcNSVKfqBWMM1aU6JENy/Lyv36m38IjV\n+x7jYNFj2Wf9jKfGZxBjpfCMghTbZC4/N4tUtowu7rhx3Xx7pgeRBqA7ZtDSOFo=\n=SsTO\n-----END PGP SIGNATURE-----\n",
-        "payload": "tree 78d9e155595efc0096126868b1b524c7ec68ed5e\nparent f6086f143cba6f76a867023439cf183a8345b682\nauthor Chris Barth <chrisjbarth@hotmail.com> 1693941416 -0400\ncommitter GitHub <noreply@github.com> 1693941416 -0400\n\nUse application version number for head of changelog (#7)\n\n",
-        "verified_at": "2024-01-16T19:59:59Z"
-      }
-    },
-    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/aaae7e0b07fa2078dec4096074a061aaf40a0439",
-    "html_url": "https://github.com/cjbarth/github-release-notes/commit/aaae7e0b07fa2078dec4096074a061aaf40a0439",
-    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/aaae7e0b07fa2078dec4096074a061aaf40a0439/comments",
-    "author": {
-      "login": "cjbarth",
-      "id": 3049726,
-      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/cjbarth",
-      "html_url": "https://github.com/cjbarth",
-      "followers_url": "https://api.github.com/users/cjbarth/followers",
-      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
-      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
-      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
-      "repos_url": "https://api.github.com/users/cjbarth/repos",
-      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "committer": {
-      "login": "web-flow",
-      "id": 19864447,
-      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/web-flow",
-      "html_url": "https://github.com/web-flow",
-      "followers_url": "https://api.github.com/users/web-flow/followers",
-      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-      "organizations_url": "https://api.github.com/users/web-flow/orgs",
-      "repos_url": "https://api.github.com/users/web-flow/repos",
-      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/web-flow/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "parents": [
-      {
-        "sha": "f6086f143cba6f76a867023439cf183a8345b682",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/f6086f143cba6f76a867023439cf183a8345b682",
-        "html_url": "https://github.com/cjbarth/github-release-notes/commit/f6086f143cba6f76a867023439cf183a8345b682"
-      }
-    ]
-  },
-  {
-    "sha": "fa9e966b56872cee12980922be4e0ed94ae0eabb",
-    "node_id": "C_kwDOE4xentoAKGZhOWU5NjZiNTY4NzJjZWUxMjk4MDkyMmJlNGUwZWQ5NGFlMGVhYmI",
-    "commit": {
-      "author": {
-        "name": "Chris Barth",
-        "email": "chrisjbarth@hotmail.com",
-        "date": "2023-09-05T15:22:26Z"
+        "date": "2021-05-24T15:04:36Z"
       },
       "committer": {
         "name": "Chris Barth",
         "email": "chrisjbarth@hotmail.com",
-        "date": "2023-09-05T15:22:26Z"
+        "date": "2021-05-24T15:04:36Z"
       },
-      "message": "Release 4.2.0",
+      "message": "Correctly compare dates for PR retrieval",
       "tree": {
-        "sha": "9355331f854fe8a4c70e7270fa038e22ceaec859",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/9355331f854fe8a4c70e7270fa038e22ceaec859"
+        "sha": "747573a7dc1dea3aa9cd86335dbf737286ac2e1e",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/747573a7dc1dea3aa9cd86335dbf737286ac2e1e"
       },
-      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/fa9e966b56872cee12980922be4e0ed94ae0eabb",
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a",
       "comment_count": 0,
       "verification": {
         "verified": false,
@@ -274,9 +684,9 @@
         "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/fa9e966b56872cee12980922be4e0ed94ae0eabb",
-    "html_url": "https://github.com/cjbarth/github-release-notes/commit/fa9e966b56872cee12980922be4e0ed94ae0eabb",
-    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/fa9e966b56872cee12980922be4e0ed94ae0eabb/comments",
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a/comments",
     "author": {
       "login": "cjbarth",
       "id": 3049726,
@@ -321,44 +731,44 @@
     },
     "parents": [
       {
-        "sha": "b8fd1b6a01ef30ba0f2458a86ebd56991a911e44",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44",
-        "html_url": "https://github.com/cjbarth/github-release-notes/commit/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44"
+        "sha": "ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/ff0ddae3938db3cfcca5ef317d74eee034c32cc5"
       }
     ]
   },
   {
-    "sha": "f6086f143cba6f76a867023439cf183a8345b682",
-    "node_id": "C_kwDOE4xentoAKGY2MDg2ZjE0M2NiYTZmNzZhODY3MDIzNDM5Y2YxODNhODM0NWI2ODI",
+    "sha": "ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OmVkOWZjNzQ2YTNlNzI1NmM4Y2FkYjAyNTcxZTYwNmQwNjQ1Y2I3ZDk=",
     "commit": {
       "author": {
         "name": "Chris Barth",
         "email": "chrisjbarth@hotmail.com",
-        "date": "2023-09-05T15:03:01Z"
+        "date": "2021-05-24T15:59:38Z"
       },
       "committer": {
-        "name": "GitHub",
-        "email": "noreply@github.com",
-        "date": "2023-09-05T15:03:01Z"
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-24T15:59:38Z"
       },
-      "message": "Add support for overriding discovered PRs",
+      "message": "Use commit date as tag date",
       "tree": {
-        "sha": "c7dfa39dc1455b5a237dd813897a600de38fdb8f",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/c7dfa39dc1455b5a237dd813897a600de38fdb8f"
+        "sha": "7b675e9307fe56b9ca71e5cbfa7304642f0198fb",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/7b675e9307fe56b9ca71e5cbfa7304642f0198fb"
       },
-      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/f6086f143cba6f76a867023439cf183a8345b682",
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
       "comment_count": 0,
       "verification": {
-        "verified": true,
-        "reason": "valid",
-        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk90MlCRBK7hj4Ov3rIwAAXQcIAI98izjMknX5Z3TaHHP9nCG2\nfI6VWTYAKcS5Amn3EN8JvU4OE1ukFqp/Oe7ojVnnR2PEVfgiKdd8+oOFcoxDcphj\nT2kHFl9UJIa5Bo6nyja7HaENIb3t1kmaVbZDgHdYe+EgpaQ5cjg8yDYvNHeo+dWZ\n3jhawSJLYTSASQrGsNddTtSuSmKK8g4WP+zSEjNf+tR5MmypWrHGnjX6UKF4oHl5\nIj+iCqKQUPMQwG9aPg8xi4sI6DbasrnoKBCxjdvaBt/7PrJ5F1Q/X6vD1+FcipBS\nZpXzbRogUkCDD9x/JKGVyLm3m8qpqpEOE5hg0LuE5HMasJco+YsHso+c84b5IKo=\n=M+aX\n-----END PGP SIGNATURE-----\n",
-        "payload": "tree c7dfa39dc1455b5a237dd813897a600de38fdb8f\nparent c09f024a189c2a3494c21a85cce9f04e4b986995\nauthor Chris Barth <chrisjbarth@hotmail.com> 1693926181 -0400\ncommitter GitHub <noreply@github.com> 1693926181 -0400\n\nAdd support for overriding discovered PRs\n\n",
-        "verified_at": "2024-11-12T07:07:20Z"
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/f6086f143cba6f76a867023439cf183a8345b682",
-    "html_url": "https://github.com/cjbarth/github-release-notes/commit/f6086f143cba6f76a867023439cf183a8345b682",
-    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/f6086f143cba6f76a867023439cf183a8345b682/comments",
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ed9fc746a3e7256c8cadb02571e606d0645cb7d9/comments",
     "author": {
       "login": "cjbarth",
       "id": 3049726,
@@ -381,31 +791,779 @@
       "site_admin": false
     },
     "committer": {
-      "login": "web-flow",
-      "id": 19864447,
-      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/web-flow",
-      "html_url": "https://github.com/web-flow",
-      "followers_url": "https://api.github.com/users/web-flow/followers",
-      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
-      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
-      "organizations_url": "https://api.github.com/users/web-flow/orgs",
-      "repos_url": "https://api.github.com/users/web-flow/repos",
-      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false
     },
     "parents": [
       {
-        "sha": "c09f024a189c2a3494c21a85cce9f04e4b986995",
-        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/c09f024a189c2a3494c21a85cce9f04e4b986995",
-        "html_url": "https://github.com/cjbarth/github-release-notes/commit/c09f024a189c2a3494c21a85cce9f04e4b986995"
+        "sha": "e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a"
+      }
+    ]
+  },
+  {
+    "sha": "acef232efa2f0e66bf5bdd8f28310584fc3b1e7f",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OmFjZWYyMzJlZmEyZjBlNjZiZjViZGQ4ZjI4MzEwNTg0ZmMzYjFlN2Y=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-24T16:00:56Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-24T16:00:56Z"
+      },
+      "message": "Track PRs, commits by branch, not date",
+      "tree": {
+        "sha": "b1db0d323126a96643f2ac02ee68cc89a445832b",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/b1db0d323126a96643f2ac02ee68cc89a445832b"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/ed9fc746a3e7256c8cadb02571e606d0645cb7d9"
+      }
+    ]
+  },
+  {
+    "sha": "0b306da3c19adeef4781a3042488f9b53462fe3a",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjBiMzA2ZGEzYzE5YWRlZWY0NzgxYTMwNDI0ODhmOWI1MzQ2MmZlM2E=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-24T20:16:08Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-24T20:16:08Z"
+      },
+      "message": "Correctly compare dates for PR retrieval; fix tests",
+      "tree": {
+        "sha": "35bbd22e2d39ca5c693203dceafd47b89e039e5e",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/35bbd22e2d39ca5c693203dceafd47b89e039e5e"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/0b306da3c19adeef4781a3042488f9b53462fe3a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/0b306da3c19adeef4781a3042488f9b53462fe3a",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/0b306da3c19adeef4781a3042488f9b53462fe3a/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ff0ddae3938db3cfcca5ef317d74eee034c32cc5",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/ff0ddae3938db3cfcca5ef317d74eee034c32cc5"
+      }
+    ]
+  },
+  {
+    "sha": "2715499cd4cdcdb79adf2cbd21dcfb4578d5581b",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjI3MTU0OTljZDRjZGNkYjc5YWRmMmNiZDIxZGNmYjQ1NzhkNTU4MWI=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T13:23:13Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T13:23:13Z"
+      },
+      "message": "Merge branch 'missing-prs' into tag-commit-date",
+      "tree": {
+        "sha": "41a622479063ba822cff94d3a6b5dde1a1b69987",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/41a622479063ba822cff94d3a6b5dde1a1b69987"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/2715499cd4cdcdb79adf2cbd21dcfb4578d5581b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/2715499cd4cdcdb79adf2cbd21dcfb4578d5581b",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/2715499cd4cdcdb79adf2cbd21dcfb4578d5581b",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/2715499cd4cdcdb79adf2cbd21dcfb4578d5581b/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ed9fc746a3e7256c8cadb02571e606d0645cb7d9",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/ed9fc746a3e7256c8cadb02571e606d0645cb7d9"
+      },
+      {
+        "sha": "0b306da3c19adeef4781a3042488f9b53462fe3a",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/0b306da3c19adeef4781a3042488f9b53462fe3a",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a"
+      }
+    ]
+  },
+  {
+    "sha": "718b9aea68980bcdb49a3436414de58ae9832230",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OjcxOGI5YWVhNjg5ODBiY2RiNDlhMzQzNjQxNGRlNThhZTk4MzIyMzA=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T18:56:47Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T18:56:47Z"
+      },
+      "message": "Fix tests",
+      "tree": {
+        "sha": "78937007c60032f625e56ce6bb6493f20db4e25f",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/78937007c60032f625e56ce6bb6493f20db4e25f"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/718b9aea68980bcdb49a3436414de58ae9832230",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/718b9aea68980bcdb49a3436414de58ae9832230",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/718b9aea68980bcdb49a3436414de58ae9832230",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/718b9aea68980bcdb49a3436414de58ae9832230/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2715499cd4cdcdb79adf2cbd21dcfb4578d5581b",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/2715499cd4cdcdb79adf2cbd21dcfb4578d5581b",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/2715499cd4cdcdb79adf2cbd21dcfb4578d5581b"
+      }
+    ]
+  },
+  {
+    "sha": "d699db742a36b97c7220f538cb81a946e827e35d",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OmQ2OTlkYjc0MmEzNmI5N2M3MjIwZjUzOGNiODFhOTQ2ZTgyN2UzNWQ=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T20:42:53Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T20:42:53Z"
+      },
+      "message": "Merge branch 'tag-commit-date' into commits-by-branch",
+      "tree": {
+        "sha": "23badc2e54c30e0abd96366afaaba4e031238cf3",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/23badc2e54c30e0abd96366afaaba4e031238cf3"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/d699db742a36b97c7220f538cb81a946e827e35d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/d699db742a36b97c7220f538cb81a946e827e35d",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/d699db742a36b97c7220f538cb81a946e827e35d",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/d699db742a36b97c7220f538cb81a946e827e35d/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "acef232efa2f0e66bf5bdd8f28310584fc3b1e7f",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f"
+      },
+      {
+        "sha": "718b9aea68980bcdb49a3436414de58ae9832230",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/718b9aea68980bcdb49a3436414de58ae9832230",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/718b9aea68980bcdb49a3436414de58ae9832230"
+      }
+    ]
+  },
+  {
+    "sha": "ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde",
+    "node_id": "MDY6Q29tbWl0MzI3OTY2MzY2OmVjY2ViN2NhMWQxZTgwYTViYTg4YjRmYmY5ODYzZGQ2NzNiMDViZGU=",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T21:57:50Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-05-25T21:57:50Z"
+      },
+      "message": "Fix tests",
+      "tree": {
+        "sha": "01e64cabeb942fed9cfa88e0abb8a63a6d825b3b",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/01e64cabeb942fed9cfa88e0abb8a63a6d825b3b"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d699db742a36b97c7220f538cb81a946e827e35d",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/d699db742a36b97c7220f538cb81a946e827e35d",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/d699db742a36b97c7220f538cb81a946e827e35d"
+      }
+    ]
+  },
+  {
+    "sha": "5f4b37dcf1c3bb7a02f5a69b29f989cae803757c",
+    "node_id": "C_kwDOE4xentoAKDVmNGIzN2RjZjFjM2JiN2EwMmY1YTY5YjI5Zjk4OWNhZTgwMzc1N2M",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-09-25T01:48:45Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-09-25T01:48:45Z"
+      },
+      "message": "Add release-it",
+      "tree": {
+        "sha": "c7be062d023a9eb041d7a6b779ae17b2b2fae4d4",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/c7be062d023a9eb041d7a6b779ae17b2b2fae4d4"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde"
+      }
+    ]
+  },
+  {
+    "sha": "f2fea79abb3300381744faed0d11ef539ddf676c",
+    "node_id": "C_kwDOE4xentoAKGYyZmVhNzlhYmIzMzAwMzgxNzQ0ZmFlZDBkMTFlZjUzOWRkZjY3NmM",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-09-25T01:57:46Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-09-25T01:57:46Z"
+      },
+      "message": "Update package.json",
+      "tree": {
+        "sha": "7f27b0dddc434006dc59b443b6e14fc740e39e50",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/7f27b0dddc434006dc59b443b6e14fc740e39e50"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/f2fea79abb3300381744faed0d11ef539ddf676c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/f2fea79abb3300381744faed0d11ef539ddf676c",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/f2fea79abb3300381744faed0d11ef539ddf676c",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/f2fea79abb3300381744faed0d11ef539ddf676c/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5f4b37dcf1c3bb7a02f5a69b29f989cae803757c",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c"
+      }
+    ]
+  },
+  {
+    "sha": "2f4719d4a9997ae8d38db4cf1fe1e71183f35f59",
+    "node_id": "C_kwDOE4xentoAKDJmNDcxOWQ0YTk5OTdhZThkMzhkYjRjZjFmZTFlNzExODNmMzVmNTk",
+    "commit": {
+      "author": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-09-25T02:02:44Z"
+      },
+      "committer": {
+        "name": "Chris Barth",
+        "email": "chrisjbarth@hotmail.com",
+        "date": "2021-09-25T02:02:44Z"
+      },
+      "message": "Release 0.18.0",
+      "tree": {
+        "sha": "18a5e912fed6d610c22d072f51bc5f4133947447",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/trees/18a5e912fed6d610c22d072f51bc5f4133947447"
+      },
+      "url": "https://api.github.com/repos/cjbarth/github-release-notes/git/commits/2f4719d4a9997ae8d38db4cf1fe1e71183f35f59",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/2f4719d4a9997ae8d38db4cf1fe1e71183f35f59",
+    "html_url": "https://github.com/cjbarth/github-release-notes/commit/2f4719d4a9997ae8d38db4cf1fe1e71183f35f59",
+    "comments_url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/2f4719d4a9997ae8d38db4cf1fe1e71183f35f59/comments",
+    "author": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cjbarth",
+      "id": 3049726,
+      "node_id": "MDQ6VXNlcjMwNDk3MjY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3049726?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjbarth",
+      "html_url": "https://github.com/cjbarth",
+      "followers_url": "https://api.github.com/users/cjbarth/followers",
+      "following_url": "https://api.github.com/users/cjbarth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjbarth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjbarth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjbarth/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjbarth/orgs",
+      "repos_url": "https://api.github.com/users/cjbarth/repos",
+      "events_url": "https://api.github.com/users/cjbarth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjbarth/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f2fea79abb3300381744faed0d11ef539ddf676c",
+        "url": "https://api.github.com/repos/cjbarth/github-release-notes/commits/f2fea79abb3300381744faed0d11ef539ddf676c",
+        "html_url": "https://github.com/cjbarth/github-release-notes/commit/f2fea79abb3300381744faed0d11ef539ddf676c"
       }
     ]
   }
