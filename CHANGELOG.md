@@ -2,6 +2,7 @@
 
 ## v4.2.0 (2023-09-05)
 
+- [Release 4.2.0](https://github.com/cjbarth/github-release-notes/commit/fa9e966b56872cee12980922be4e0ed94ae0eabb) - @cjbarth
 - [Format using prettier (#9)](https://github.com/cjbarth/github-release-notes/commit/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44) - @cjbarth
 - [Update README (#8)](https://github.com/cjbarth/github-release-notes/commit/bb476de6b36057ef694b55002e3877b88f93b0ab) - @cjbarth
 - [Use application version number for head of changelog (#7)](https://github.com/cjbarth/github-release-notes/commit/aaae7e0b07fa2078dec4096074a061aaf40a0439) - @cjbarth
@@ -11,11 +12,11 @@
 
 ## v4.1.0 (2023-07-14)
 
+- [Release 4.1.0](https://github.com/cjbarth/github-release-notes/commit/c09f024a189c2a3494c21a85cce9f04e4b986995) - @cjbarth
 - [Add basic workflow for PR testing before merge (#5)](https://github.com/cjbarth/github-release-notes/commit/346d5ff6d90bbcde5d3a6264e63d250168daeebb) - @cjbarth
 - [Adjust tests to account for default branch (#4)](https://github.com/cjbarth/github-release-notes/commit/fdc118304f58692165a95b31de8fed299479f3ae) - @cjbarth
 - [Use current branch as default branch (#3)](https://github.com/cjbarth/github-release-notes/commit/16b30918eec4a2e73e4164880904034f9a457d50) - @cjbarth
 - [Move eslint `env` config to .eslintrc (#2)](https://github.com/cjbarth/github-release-notes/commit/0693fee0d7219bcf488a1adc5c97656aabdec298) - @cjbarth
-- [Release 4.1.0](https://github.com/cjbarth/github-release-notes/commit/c09f024a189c2a3494c21a85cce9f04e4b986995) - @cjbarth
 
 ---
 
@@ -24,10 +25,10 @@
 - [Release 4.0.0](https://github.com/cjbarth/github-release-notes/commit/934e728b5e87e941a5f5f2bcef457e47e423f41b) - @cjbarth
 - [Build changelog as part of release process](https://github.com/cjbarth/github-release-notes/commit/3e87029e162fdaa1a7e542e906152e4da5ac0d7b) - @cjbarth
 - [Update to release-it@15](https://github.com/cjbarth/github-release-notes/commit/cb70224198557df28fb122766131bf84608dcfdc) - @cjbarth
-- [Update changelog to follow new standards](https://github.com/cjbarth/github-release-notes/commit/2f27d03e4441ce4243bcc956d95b8cf339a42f5c) - @cjbarth
 - [Update all semver-minor dependencies](https://github.com/cjbarth/github-release-notes/commit/a372f19c67bfec2993c3740f9e386771852ced73) - @cjbarth
-- [Update can-i-use data](https://github.com/cjbarth/github-release-notes/commit/5edb4b770b49135beaeb8e08ae9a7bd75ac434ca) - @cjbarth
+- [Update changelog to follow new standards](https://github.com/cjbarth/github-release-notes/commit/2f27d03e4441ce4243bcc956d95b8cf339a42f5c) - @cjbarth
 - [Make default template more compatible with markdown lint](https://github.com/cjbarth/github-release-notes/commit/f83261ad19b570ec28a2fff4d8d0db1ddfc97e94) - @cjbarth
+- [Update can-i-use data](https://github.com/cjbarth/github-release-notes/commit/5edb4b770b49135beaeb8e08ae9a7bd75ac434ca) - @cjbarth
 - [Make default date format ISO](https://github.com/cjbarth/github-release-notes/commit/2d5cd34fddf102dfe3a32545c9cb6dc49e3e8b75) - @cjbarth
 
 ---
@@ -94,11 +95,11 @@
 - [Update package.json](https://github.com/cjbarth/github-release-notes/commit/f2fea79abb3300381744faed0d11ef539ddf676c) - @cjbarth
 - [Add release-it](https://github.com/cjbarth/github-release-notes/commit/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c) - @cjbarth
 - [Fix tests](https://github.com/cjbarth/github-release-notes/commit/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde) - @cjbarth
-- [Fix tests](https://github.com/cjbarth/github-release-notes/commit/718b9aea68980bcdb49a3436414de58ae9832230) - @cjbarth
-- [Correctly compare dates for PR retrieval; fix tests](https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a) - @cjbarth
 - [Track PRs, commits by branch, not date](https://github.com/cjbarth/github-release-notes/commit/acef232efa2f0e66bf5bdd8f28310584fc3b1e7f) - @cjbarth
+- [Fix tests](https://github.com/cjbarth/github-release-notes/commit/718b9aea68980bcdb49a3436414de58ae9832230) - @cjbarth
 - [Use commit date as tag date](https://github.com/cjbarth/github-release-notes/commit/ed9fc746a3e7256c8cadb02571e606d0645cb7d9) - @cjbarth
 - [Correctly compare dates for PR retrieval](https://github.com/cjbarth/github-release-notes/commit/e53f9e7f6aff4b32dc3f7e6ccdca1f9d767eaf1a) - @cjbarth
+- [Correctly compare dates for PR retrieval; fix tests](https://github.com/cjbarth/github-release-notes/commit/0b306da3c19adeef4781a3042488f9b53462fe3a) - @cjbarth
 - [Update supported NodeJS versions to current (#291)](https://github.com/cjbarth/github-release-notes/commit/ff0ddae3938db3cfcca5ef317d74eee034c32cc5) - @cjbarth
 - [docs: add viatrix as a contributor (#297)](https://github.com/cjbarth/github-release-notes/commit/8beb6f013cdfe410a0c20cd48291efe4c92a8ace) - @allcontributors[bot]
 - [Return exit code 1 on error for gren changelog (#294)](https://github.com/cjbarth/github-release-notes/commit/69b77665dddb1135a81ce856a7c8edb1003dbc45) - @viatrix
@@ -146,8 +147,8 @@
 - [docs: add phun-ky as a contributor (#236)](https://github.com/cjbarth/github-release-notes/commit/f1aa847bf93f648454a5c927e8dcfdf765aa6c87) - @allcontributors[bot]
 - [docs: add phun-ky as a contributor (#234)](https://github.com/cjbarth/github-release-notes/commit/a53c582fe24e1f86584490994d65a534a27c965c) - @allcontributors[bot]
 - [docs: add wellDan28 as a contributor (#233)](https://github.com/cjbarth/github-release-notes/commit/a3013a9a4be5b2fe3fd34a8e5ac360b5da10d88a) - @allcontributors[bot]
-- [docs: update README.md [skip ci]](https://github.com/cjbarth/github-release-notes/commit/8191996ff9ab25a6afadab92d397c842dd6eb4fe) - @allcontributors[bot]
 - [docs: create .all-contributorsrc [skip ci]](https://github.com/cjbarth/github-release-notes/commit/754ba2105677a36cbfce40bf4d89fbd0c6daeefb) - @allcontributors[bot]
+- [docs: update README.md [skip ci]](https://github.com/cjbarth/github-release-notes/commit/8191996ff9ab25a6afadab92d397c842dd6eb4fe) - @allcontributors[bot]
 - [Update CHANGELOG.md](https://github.com/cjbarth/github-release-notes/commit/998418715993d042cfb0b2bb4eb72bae105cc583) - @alexcanessa
 
 ---
