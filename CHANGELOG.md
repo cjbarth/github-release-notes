@@ -1,5 +1,13 @@
 # Changelog
 
+## v4.3.0 (2025-04-17)
+
+- [Rework sorting to account for parents and date (#12)](https://github.com/cjbarth/github-release-notes/commit/ba1fc4bf49722950f9476facd725940b1150ac02) - @cjbarth
+- [Sort commits by parent, then date (#11)](https://github.com/cjbarth/github-release-notes/commit/b55a29a783e3c0f69299a0b45563c081e618a63e) - @cjbarth
+- [Update dependencies (#10)](https://github.com/cjbarth/github-release-notes/commit/84cc103cf23ca8244b80a024f0fc27c674983aa0) - @cjbarth
+
+---
+
 ## v4.2.0 (2023-09-05)
 
 - [Release 4.2.0](https://github.com/cjbarth/github-release-notes/commit/fa9e966b56872cee12980922be4e0ed94ae0eabb) - @cjbarth
