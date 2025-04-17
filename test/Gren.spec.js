@@ -619,6 +619,20 @@ describe("Gren", () => {
     });
   });
 
+  describe("_sortCommitsByParent", function () {
+    it("Should sort the commits by parent", function () {
+      const unsortedCommits = JSON.parse(
+        fs.readFileSync(process.cwd() + "/test/data/commits_unsorted.json"),
+      );
+      const sortedCommits = JSON.parse(
+        fs.readFileSync(process.cwd() + "/test/data/commits_sorted.json"),
+      );
+      const processedCommits = gren._sortCommitsByParent(unsortedCommits);
+
+      assert.deepEqual(processedCommits, sortedCommits, "The commits are sorted");
+    });
+  });
+
   describe("_checkChangelogFile", () => {
     before(() => {
       gren.options.changelogFilename = "test/.temp/CHANGELOG.md";
