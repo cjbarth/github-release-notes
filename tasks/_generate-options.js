@@ -1,7 +1,7 @@
-const YAML = require("yamljs");
-const chalk = require("chalk");
-const { writeFileSync } = require("fs");
-const { changelogOptions, releaseOptions, globalOptions } = require("../lib/_options");
+import YAML from "yamljs";
+import chalk from "chalk";
+import { writeFileSync } from "node:fs";
+import { changelogOptions, releaseOptions, globalOptions } from "../lib/_options.js";
 
 const stringifyObject = (array) =>
   YAML.stringify(

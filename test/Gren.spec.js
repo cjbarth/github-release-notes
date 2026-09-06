@@ -1,6 +1,6 @@
 import { assert } from "chai";
 import chalk from "chalk";
-import fs from "fs";
+import fs from "node:fs";
 import Gren from "../lib/src/Gren.js";
 import { requireConfig } from "../lib/src/_utils.js";
 

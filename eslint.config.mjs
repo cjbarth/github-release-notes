@@ -1,22 +1,25 @@
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
-import importPlugin from "eslint-plugin-import";
+import { flatConfigs as importXConfigs } from "eslint-plugin-import-x";
 import mochaPlugin from "eslint-plugin-mocha";
 import pluginPromise from "eslint-plugin-promise";
-// eslint-disable-next-line import/no-unresolved
 import { defineConfig, globalIgnores } from "eslint/config";
 import globals from "globals";
 
 export default defineConfig([
-  globalIgnores(["docs/**", "dist/**", "bin/**"]),
+  globalIgnores(["docs/**", "coverage/**"]),
   eslint.configs.recommended,
-  mochaPlugin.configs.flat.recommended,
-  importPlugin.flatConfigs.recommended,
+  mochaPlugin.configs.recommended,
+  importXConfigs.recommended,
   pluginPromise.configs["flat/recommended"],
   {
     files: ["**/*.{cjs,mjs,js}"],
+    settings: {
+      // import-x cannot statically resolve prettier's exports map.
+      "import-x/ignore": ["prettier"],
+    },
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: "latest",
       sourceType: "module",
       globals: {
         ...globals.node,
@@ -37,10 +40,10 @@ export default defineConfig([
       "prefer-destructuring": ["error", { object: true, array: false }],
       "prefer-spread": "error",
       "prefer-rest-params": "error",
-      "import/no-unresolved": "error",
-      "import/named": "off", //temp
-      "import/default": "error",
-      "import/namespace": "error",
+      "import-x/no-unresolved": "error",
+      "import-x/named": "off", //temp
+      "import-x/default": "error",
+      "import-x/namespace": "error",
       "no-unused-vars": "off",
       "no-debugger": "error",
       strict: "error",

@@ -1,8 +1,11 @@
 import { assert } from "chai";
+import grenrc from "../.grenrc.cjs";
 import chalk from "chalk";
-import fs from "fs";
+import fs from "node:fs";
+import { spawn } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import YAML from "yamljs";
-import * as utils from "../lib/src/_utils";
+import * as utils from "../lib/src/_utils.js";
 
 describe("_utils.js", () => {
   describe("sortObject", () => {
@@ -142,8 +145,15 @@ describe("_utils.js", () => {
           return;
         }
 
-        if (file.match(/\.js$/)) {
+        if (file.match(/\.cjs$/)) {
           fs.writeFileSync(file, `module.exports = ${jsonFileContent}`);
+
+          return;
+        }
+
+        // This package is ESM, so a bare `.js` config is loaded as ESM too.
+        if (file.match(/\.m?js$/)) {
+          fs.writeFileSync(file, `export default ${jsonFileContent}`);
 
           return;
         }
@@ -253,9 +263,25 @@ describe("_utils.js", () => {
   });
 
   describe("getConfigFromRemote", () => {
-    const grenRemote =
-      "https://raw.githubusercontent.com/cjbarth/github-release-notes/master/.grenrc.js";
-    const grenrc = require(process.cwd() + "/.grenrc.js");
+    // Served from a local child process rather than fetched from the default
+    // branch, so the test depends on neither the network nor what is pushed.
+    let server;
+    let grenRemote;
+
+    before((done) => {
+      server = spawn("node", [
+        fileURLToPath(new URL("./fixtures/remote-config-server.js", import.meta.url)),
+      ]);
+      server.stdout.once("data", (data) => {
+        grenRemote = `http://127.0.0.1:${data.toString().trim()}/.grenrc.cjs`;
+        done();
+      });
+      server.once("error", done);
+    });
+
+    after(() => {
+      server.kill();
+    });
 
     it("Should fetch config from remote url", () => {
       assert.deepEqual(utils.getConfigFromRemote(grenRemote), grenrc, "Given a remote gren config");

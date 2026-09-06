@@ -1,1 +1,1 @@
-require("./bin/gren.js");
+import "./lib/gren.js";

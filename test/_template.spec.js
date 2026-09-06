@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import { generate } from "../lib/src/_template";
+import { generate } from "../lib/src/_template.js";
 
 describe("_template.js", () => {
   describe("generate", () => {
