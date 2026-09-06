@@ -2,12 +2,12 @@
 
 > Github release notes and changelog generator
 
-[![npm version](https://badge.fury.io/js/@cjbarth%2Fgithub-release-notes.svg)](https://badge.fury.io/js/@cjbarth%2Fgithub-release-notes.svg)
-[![Build Status](https://travis-ci.org/github-tools/github-release-notes.svg?branch=master)](https://travis-ci.org/github-tools/github-release-notes)
-[![Join the chat at https://gitter.im/github-release-notes/Lobby](https://badges.gitter.im/github-release-notes/Lobby.svg)](https://gitter.im/github-release-notes/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Codecov](https://codecov.io/gh/github-tools/github-release-notes/branch/master/graph/badge.svg)](https://codecov.io/gh/github-tools/github-release-notes/branch/master)
-[![npm downloads](https://img.shields.io/npm/dm/github-release-notes.svg)](https://www.npmjs.com/package/github-release-notes)
-[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
+[![npm version](https://img.shields.io/npm/v/@cjbarth/github-release-notes.svg)](https://www.npmjs.com/package/@cjbarth/github-release-notes)
+[![npm downloads](https://img.shields.io/npm/dm/@cjbarth/github-release-notes.svg)](https://www.npmjs.com/package/@cjbarth/github-release-notes)
+[![Test Status](https://github.com/cjbarth/github-release-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/cjbarth/github-release-notes/actions/workflows/ci.yml)
+[![Node.js version](https://img.shields.io/node/v/@cjbarth/github-release-notes.svg)](https://www.npmjs.com/package/@cjbarth/github-release-notes)
+[![License](https://img.shields.io/npm/l/@cjbarth/github-release-notes.svg)](https://github.com/cjbarth/github-release-notes/blob/master/LICENSE)
+[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github.com/cjbarth/github-release-notes)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
@@ -40,7 +40,6 @@ It also can generate a `CHANGELOG.md` file based on the release notes (or genera
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
 - [Configuration file](#configuration-file)
-- [Full Documentation](https://github-tools.github.io/github-release-notes)
 
 ## The Motivation and Concept
 
@@ -83,7 +82,7 @@ Issue labels increase the level of depth of what the release notes should show, 
 _e.g. if you see the example above, the issues are grouped by the two labels `enhancement` and `bug`, then customised via a config file._
 
 `gren` generates those notes by collecting all the issues closed between a tag (defaults to latest) and the tag before it (or a tag that you specify).
-If you want to be more accurate on the issues that belong to a release, you can group them in [milestones](https://github-tools.github.io/github-release-notes/examples.html#milestones) and use only the issues that belong to that Milestone.
+If you want to be more accurate on the issues that belong to a release, you can group them in [milestones](#examples) and use only the issues that belong to that Milestone.
 
 > The output above is a result of release notes built from issues.
 
@@ -93,7 +92,7 @@ In order to have splendidly generated release notes, we recommend to follow thes
 
 1. Start the title with a verb (e.g. Change header styles)
 2. Use the imperative mood in the title (e.g. Fix, not Fixed or Fixes header styles)
-3. Use labels wisely and assign one label per issue. `gren` has the [option to ignore issues](https://github-tools.github.io/github-release-notes/options.html#ignore-issues-with) that have one of the specified labels.
+3. Use labels wisely and assign one label per issue. `gren` has the [option to ignore issues](#options) that have one of the specified labels.
 
 ### `commits`
 
@@ -131,7 +130,7 @@ In order to have splendidly generated release notes, we recommend to follow thes
 Install `github-release-notes` via npm:
 
 ```shell
-npm install github-release-notes -g
+npm install @cjbarth/github-release-notes -g
 ```
 
 ### Setup
@@ -143,10 +142,10 @@ Then add this line to `~/.bash_profile` (or `~/.zshrc`):
 export GREN_GITHUB_TOKEN=your_token_here
 ```
 
-Show the internet that you use gren for automating your release notes -> [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
+Show the internet that you use gren for automating your release notes -> [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github.com/cjbarth/github-release-notes)
 
 ```
-[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
+[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github.com/cjbarth/github-release-notes)
 ```
 
 ## Basic Usage
@@ -172,7 +171,7 @@ If you don't want to save the token, you can specify one as an option:
 gren release --token=[your token]
 ```
 
-### [See all the options here](https://github-tools.github.io/github-release-notes/options.html)
+### [See all the options below](#options)
 
 ### Commands
 
@@ -209,7 +208,7 @@ gren --help
 gren help release # or gren release --help
 ```
 
-It's also possible to see all the examples [here](https://github-tools.github.io/github-release-notes/examples.html) or directly in the terminal:
+It's also possible to see [all the examples below](#examples), or directly in the terminal:
 
 ```shell
 gren examples release
@@ -217,7 +216,7 @@ gren examples release
 
 ## Configuration file
 
-You can create a configuration file where the task will be run to specify your options. [See how to set up the config file](https://github-tools.github.io/github-release-notes/options.html#configuration-file)
+You can create a configuration file where the task will be run to specify your options. [See all the available options](#options).
 The accepted file extensions are the following:
 
 - `.grenrc`
@@ -242,7 +241,148 @@ If you need help to create the configuration file, you can run the following com
 gren init
 ```
 
-### [See full documentation here](https://github-tools.github.io/github-release-notes)
+## Options
+
+Every option can be passed on the command line, or set in a [configuration file](#configuration-file).
+
+<!-- GREN-OPTIONS:START -->
+<!-- Generated by `npm run docs`. Do not edit by hand. -->
+
+### Global options
+
+| Option                      | Value                                                 | Description                                                                                                                                                                                          | Default                |
+| --------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `-u, --username`            | `<repo owner>`                                        | The username of the repo e.g. cjbarth                                                                                                                                                                |                        |
+| `-r, --repo`                | `<repository name>`                                   | The repository name e.g. github-release-notes                                                                                                                                                        |                        |
+| `-T, --token`               | `<github token>`                                      | The token generated with repo access                                                                                                                                                                 |                        |
+| `-a, --api-url`             | `<url>`                                               | Override the GitHub API URL, allows gren to connect to a private GHE installation                                                                                                                    |                        |
+| `-o, --override`            |                                                       | Override the release notes if exist                                                                                                                                                                  |                        |
+| `-B, --debug`               |                                                       | Run the command in debugging mode                                                                                                                                                                    |                        |
+| `-t, --tags`                | `<new-tag>..<old-tag>`                                | Write release notes for &lt;new-tag&gt; using data collected until &lt;old-tag&gt;. If only one tag is specified, will use data until the previous tag. To run gren for all the tags, use --tags=all |                        |
+| `-l, --limit`               | `<number>`                                            | Just produce release notes for the &lt;number&gt; last releases.                                                                                                                                     |                        |
+| `-D, --data-source`         | `<issues\|commits\|milestones\|prs\|prs-with-issues>` | The informations you want to use to build release notes. [issues]                                                                                                                                    | `issues`               |
+| `-h, --head`                | `<string>`                                            | Which branch would you like to include commits from after the last tag?                                                                                                                              |                        |
+| `-N, --include-messages`    | `<merge\|commits\|all>`                               | Filter the messages added to the release notes. Only used when --data-source used is commits [commits]                                                                                               | `commits`              |
+| `-i, --ignore-tags-with`    | `<string1>,<string2>`                                 | Ignore tags that contain one of the specified strings.                                                                                                                                               |                        |
+| `-C, --ignore-commits-with` | `<string1>,<string2>`                                 | Ignore commits that contain one of the specified strings.                                                                                                                                            |                        |
+| `-p, --prefix`              | `<name prefix>`                                       | Add a prefix to the tag version. e.g. 'v'                                                                                                                                                            |                        |
+| `-g, --group-by`            | `<label>`                                             | Group the issues using the labels as group headings. You can set custom headings for groups of labels from a configuration file.                                                                     |                        |
+| `-L, --ignore-labels`       | `<label1>,<label2>`                                   | Ignore the specified labels.                                                                                                                                                                         |                        |
+| `-I, --ignore-issues-with`  | `<label1>,<label2>`                                   | Ignore issues that contains one of the specified labels.                                                                                                                                             |                        |
+| `-M, --milestone-match`     | `<prefix>`                                            | The title that the script needs to match to link the release to the milestone. e.g. v will match v0.1.0 [Release {{tag_name}}]                                                                       | `Release {{tag_name}}` |
+| `-m, --only-milestones`     |                                                       | Add to the release bodies only the issues that have a milestone                                                                                                                                      |                        |
+| `-q, --quiet`               |                                                       | Run command without console logs.                                                                                                                                                                    |                        |
+| `-c, --config`              | `<string>`                                            | Specify a custom config filename                                                                                                                                                                     |                        |
+
+### Release options
+
+| Option             | Value | Description                       | Default |
+| ------------------ | ----- | --------------------------------- | ------- |
+| `-d, --draft`      |       | Set the release notes as a draft. |         |
+| `-P, --prerelease` |       | Set the release as a prerelease.  |         |
+
+### Changelog options
+
+| Option                     | Value           | Description                                                          | Default        |
+| -------------------------- | --------------- | -------------------------------------------------------------------- | -------------- |
+| `-G, --generate`           |                 | Generate the changelog with gren rather than using the repo releases |                |
+| `-f, --changelog-filename` | `<filename.md>` | The name of the changelog file. [CHANGELOG.md]                       | `CHANGELOG.md` |
+
+<!-- GREN-OPTIONS:END -->
+
+## Examples
+
+<!-- GREN-EXAMPLES:START -->
+<!-- Generated by `npm run docs`. Do not edit by hand. -->
+
+### `gren`
+
+**Help** — Show the general help of the gren tool
+
+```shell
+gren
+gren --help
+gren -h
+```
+
+**Version** — Show the using version
+
+```shell
+gren --version
+gren -v
+```
+
+Get help for the release options
+
+```shell
+gren help release
+```
+
+### `gren release`
+
+**Manual repo infos** — Run gren outside of the project folder.
+
+```shell
+gren release --username=REPO_USER --repo=REPO_NAME
+```
+
+**Override an existing release** — By default, `gren` won't override an existing release and it will flag `Skipping 4.0.0 (use --override to replace it)`. If you want to override, as it suggests, use:
+
+```shell
+gren release --override
+```
+
+**Create release notes for a specific tag** — Create release notes from the commits or issues closed for the specified tag and the one before.
+
+```shell
+gren release --tags=4.0.0
+```
+
+Create release notes from the commits or the issues between two specified tags.
+
+```shell
+gren release --tags=4.0.0..3.0.0
+```
+
+**Create release notes for all the tags** — Create release notes for all the tags in the repository.
+
+```shell
+gren release --tags=all
+```
+
+Ignore the tags including an Array of strings
+
+```shell
+gren release --tags=all --ignore-tags-with="-rc","-alpha","-beta"
+```
+
+**Work with milestones** — Create release notes for a tag using the belonging to a milestone that matches the name of the tag. e.g. If the tag is 4.0.0, `gren` is going to match the milestone _"Release 4.0.0"_.
+
+```shell
+gren release --data-source=milestones --milestone-match="Release {{tag_name}}"
+```
+
+Otherwise, you can just filter the issues that belong to _a_ milestone
+
+```shell
+gren release --only-milestones
+```
+
+**Use commit messages** — Generate release notes based on commit messages
+
+```shell
+gren release --data-source=commits
+```
+
+### `gren changelog`
+
+**Custom changelog** — Create a changelog with a custom filename
+
+```shell
+gren changelog --generate --override --changelog-filename=RELEASE_NOTES.md
+```
+
+<!-- GREN-EXAMPLES:END -->
 
 ## Contributors ✨
 

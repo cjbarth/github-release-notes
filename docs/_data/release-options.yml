@@ -1,8 +1,0 @@
--
-    short: '-d'
-    name: draft
-    description: 'Set the release notes as a draft.'
--
-    short: '-P'
-    name: prerelease
-    description: 'Set the release as a prerelease.'

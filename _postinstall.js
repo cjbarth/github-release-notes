@@ -13,11 +13,11 @@ Before you start:
     )}
     2. For every project, run ${chalk.green("gren init")} to create a config file (optional)
     3. Run ${chalk.green("gren help")} for more help or see ${chalk.blue(
-      "https://github-tools.github.io/github-release-notes/",
+      "https://github.com/cjbarth/github-release-notes#readme",
     )}
 
 For any questions/issues, go here: ${chalk.blue(
-    "https://github.com/github-tools/github-release-notes/issues",
+    "https://github.com/cjbarth/github-release-notes/issues",
   )}
 
 If you like ${chalk.green("gren")}, feel free to ⭐  it!

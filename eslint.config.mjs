@@ -7,7 +7,7 @@ import { defineConfig, globalIgnores } from "eslint/config";
 import globals from "globals";
 
 export default defineConfig([
-  globalIgnores(["docs/**", "coverage/**"]),
+  globalIgnores(["coverage/**"]),
   eslint.configs.recommended,
   mochaPlugin.configs.recommended,
   importXConfigs.recommended,
