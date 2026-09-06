@@ -126,6 +126,8 @@ In order to have splendidly generated release notes, we recommend to follow thes
 
 ## Installation
 
+`gren` requires **Node.js 24 or newer** (the current LTS).
+
 Install `github-release-notes` via npm:
 
 ```shell
@@ -223,6 +225,14 @@ The accepted file extensions are the following:
 - `.grenrc.yml`
 - `.grenrc.yaml`
 - `.grenrc.js`
+- `.grenrc.cjs`
+- `.grenrc.mjs`
+
+A `.grenrc.js` file is interpreted according to the `type` field of the nearest
+`package.json`, so use `export default {...}` in an ESM project and
+`module.exports = {...}` in a CommonJS one. Use `.grenrc.mjs` or `.grenrc.cjs` to
+pick one explicitly. A config hosted remotely (via the `gren` field in
+`package.json`) must be CommonJS.
 
 ### Init
 

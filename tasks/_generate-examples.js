@@ -1,7 +1,7 @@
-const YAML = require("yamljs");
-const chalk = require("chalk");
-const { writeFileSync } = require("fs");
-const { gren, release, changelog } = require("../lib/_examples");
+import YAML from "yamljs";
+import chalk from "chalk";
+import { writeFileSync } from "node:fs";
+import { gren, release, changelog } from "../lib/_examples.js";
 
 const files = {
   "gren-examples": YAML.stringify(gren),

@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import { globalOptions, releaseOptions, changelogOptions } from "../lib/_options";
+import { globalOptions, releaseOptions, changelogOptions } from "../lib/_options.js";
 
 describe("_options.js", () => {
   it("Should have unique shorts", () => {
