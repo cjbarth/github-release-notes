@@ -1,7 +1,17 @@
 # Changelog
 
+## v5.0.0 (2026-09-07)
+
+- [Keep Octokit's request logging out of normal output](https://github.com/cjbarth/github-release-notes/commit/eaaf279d3fb69e2b397b356be60ab4a5243099fa) - @cjbarth
+- [Replace the docs site with a self-contained README](https://github.com/cjbarth/github-release-notes/commit/c88c7dc0695bdf6414558087b6b8c1a333cd4c7b) - @cjbarth
+- [Replace unmaintained github-api with @octokit/rest (#14)](https://github.com/cjbarth/github-release-notes/commit/2cf1935bba0e5b87dcd4c3c7987279818468e180) - @cjbarth
+- [Update all dependencies, move to ESM and Node 24 LTS (#13)](https://github.com/cjbarth/github-release-notes/commit/bb725419a850505383a59a9fa8b7f70100eae3f2) - @cjbarth
+
+---
+
 ## v4.3.0 (2025-04-17)
 
+- [Release 4.3.0](https://github.com/cjbarth/github-release-notes/commit/10fffd5e0fcf16215d2c151f7926b76269467057) - @cjbarth
 - [Rework sorting to account for parents and date (#12)](https://github.com/cjbarth/github-release-notes/commit/ba1fc4bf49722950f9476facd725940b1150ac02) - @cjbarth
 - [Sort commits by parent, then date (#11)](https://github.com/cjbarth/github-release-notes/commit/b55a29a783e3c0f69299a0b45563c081e618a63e) - @cjbarth
 - [Update dependencies (#10)](https://github.com/cjbarth/github-release-notes/commit/84cc103cf23ca8244b80a024f0fc27c674983aa0) - @cjbarth
