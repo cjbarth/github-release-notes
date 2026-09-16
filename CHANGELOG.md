@@ -11,7 +11,6 @@
 
 ## v4.3.0 (2025-04-17)
 
-- [Release 4.3.0](https://github.com/cjbarth/github-release-notes/commit/10fffd5e0fcf16215d2c151f7926b76269467057) - @cjbarth
 - [Rework sorting to account for parents and date (#12)](https://github.com/cjbarth/github-release-notes/commit/ba1fc4bf49722950f9476facd725940b1150ac02) - @cjbarth
 - [Sort commits by parent, then date (#11)](https://github.com/cjbarth/github-release-notes/commit/b55a29a783e3c0f69299a0b45563c081e618a63e) - @cjbarth
 - [Update dependencies (#10)](https://github.com/cjbarth/github-release-notes/commit/84cc103cf23ca8244b80a024f0fc27c674983aa0) - @cjbarth
@@ -20,7 +19,6 @@
 
 ## v4.2.0 (2023-09-05)
 
-- [Release 4.2.0](https://github.com/cjbarth/github-release-notes/commit/fa9e966b56872cee12980922be4e0ed94ae0eabb) - @cjbarth
 - [Format using prettier (#9)](https://github.com/cjbarth/github-release-notes/commit/b8fd1b6a01ef30ba0f2458a86ebd56991a911e44) - @cjbarth
 - [Update README (#8)](https://github.com/cjbarth/github-release-notes/commit/bb476de6b36057ef694b55002e3877b88f93b0ab) - @cjbarth
 - [Use application version number for head of changelog (#7)](https://github.com/cjbarth/github-release-notes/commit/aaae7e0b07fa2078dec4096074a061aaf40a0439) - @cjbarth
@@ -30,7 +28,6 @@
 
 ## v4.1.0 (2023-07-14)
 
-- [Release 4.1.0](https://github.com/cjbarth/github-release-notes/commit/c09f024a189c2a3494c21a85cce9f04e4b986995) - @cjbarth
 - [Add basic workflow for PR testing before merge (#5)](https://github.com/cjbarth/github-release-notes/commit/346d5ff6d90bbcde5d3a6264e63d250168daeebb) - @cjbarth
 - [Adjust tests to account for default branch (#4)](https://github.com/cjbarth/github-release-notes/commit/fdc118304f58692165a95b31de8fed299479f3ae) - @cjbarth
 - [Use current branch as default branch (#3)](https://github.com/cjbarth/github-release-notes/commit/16b30918eec4a2e73e4164880904034f9a457d50) - @cjbarth
@@ -40,7 +37,6 @@
 
 ## v4.0.0 (2023-04-12)
 
-- [Release 4.0.0](https://github.com/cjbarth/github-release-notes/commit/934e728b5e87e941a5f5f2bcef457e47e423f41b) - @cjbarth
 - [Build changelog as part of release process](https://github.com/cjbarth/github-release-notes/commit/3e87029e162fdaa1a7e542e906152e4da5ac0d7b) - @cjbarth
 - [Update to release-it@15](https://github.com/cjbarth/github-release-notes/commit/cb70224198557df28fb122766131bf84608dcfdc) - @cjbarth
 - [Update all semver-minor dependencies](https://github.com/cjbarth/github-release-notes/commit/a372f19c67bfec2993c3740f9e386771852ced73) - @cjbarth
@@ -53,7 +49,6 @@
 
 ## v3.0.1 (2023-04-11)
 
-- [Release 3.0.1](https://github.com/cjbarth/github-release-notes/commit/9a1c586c10982040379c2c13a5b41822cc9c3bc0) - @cjbarth
 - [Ensure that PRs are sorted by merge date](https://github.com/cjbarth/github-release-notes/commit/18007c9a6e3a7c480ac325bb77ffbb81f1b0744f) - @cjbarth
 - [Ensure that PRs are sorted by merge date](https://github.com/cjbarth/github-release-notes/commit/6990df20ca9fa1277787ff60a50941d3fdfde7c2) - @cjbarth
 
@@ -61,14 +56,12 @@
 
 ## v3.0.0 (2022-10-13)
 
-- [Release 3.0.0](https://github.com/cjbarth/github-release-notes/commit/e5b88259c599fbeed648464d4977ff7e0b314b40) - @cjbarth
 - [Stably sort commits](https://github.com/cjbarth/github-release-notes/commit/51ac5a1835cbb28ebecbf2913b6d8c3e52010dfc) - @cjbarth
 
 ---
 
 ## v2.1.0 (2022-10-12)
 
-- [Release 2.1.0](https://github.com/cjbarth/github-release-notes/commit/ebfdcaf83493c8124a04764bbc224f7a56796025) - @cjbarth
 - [Update changelog](https://github.com/cjbarth/github-release-notes/commit/3cee2ddaa27be24cba1cb439f165b3ad03265b1d) - @cjbarth
 - [Adjust tests to support new features](https://github.com/cjbarth/github-release-notes/commit/4cd37e9163785570c59de913fb9ecca95f9ddeab) - @cjbarth
 - [Update changelog](https://github.com/cjbarth/github-release-notes/commit/c2d01f485bc725c0f5b98b142771591cc842b0f7) - @cjbarth
@@ -78,7 +71,6 @@
 
 ## v2.0.0 (2022-08-26)
 
-- [Release 2.0.0](https://github.com/cjbarth/github-release-notes/commit/7024505d127242a55822a8cd76b36ea6ba4829f8) - @cjbarth
 - [Update changelog](https://github.com/cjbarth/github-release-notes/commit/2ba7ee5d15e69085234e3b112191a966ed32ad7b) - @cjbarth
 - [Add option to get commits since last tag; don't skip any commits](https://github.com/cjbarth/github-release-notes/commit/73ba41a7dd926bc9e65e379ae5916736fd78ad18) - @cjbarth
 - [Update tests for fork and new features](https://github.com/cjbarth/github-release-notes/commit/59f222ac706c5cf0c1737158552cd8482aeb7ea4) - @cjbarth
@@ -92,7 +84,6 @@
 
 ## v1.0.1 (2022-04-01)
 
-- [Release 1.0.1](https://github.com/cjbarth/github-release-notes/commit/8bd16d19cbc26bd77a73983423a20556df88f519) - @cjbarth
 - [Fix broken build by rolling back eslint updates](https://github.com/cjbarth/github-release-notes/commit/0d0336f6d285f97c2003b6cfe0813542802b64d7) - @cjbarth
 - [Update README for new project name](https://github.com/cjbarth/github-release-notes/commit/dc1a6d5285d4921cdf3b63891ee69a7a413655d0) - @cjbarth
 - [Update release-it to auto-build](https://github.com/cjbarth/github-release-notes/commit/dbdcfd9a27a260d88952c2fc8319fcf2d3116367) - @cjbarth
@@ -101,7 +92,6 @@
 
 ## v1.0.0 (2022-04-01)
 
-- [Release 1.0.0](https://github.com/cjbarth/github-release-notes/commit/25698b89794422434caf8667dbee156e4fa25275) - @cjbarth
 - [Update packages, semver-major](https://github.com/cjbarth/github-release-notes/commit/ec3c201f6bacc0d98da7046d6107b2deccfb2812) - @cjbarth
 - [Update packages, semver-minor](https://github.com/cjbarth/github-release-notes/commit/bd75ecfeb3d21eb3dcf81faf6a4595c4755a136e) - @cjbarth
 
@@ -109,7 +99,6 @@
 
 ## v0.18.0 (2021-09-25)
 
-- [Release 0.18.0](https://github.com/cjbarth/github-release-notes/commit/2f4719d4a9997ae8d38db4cf1fe1e71183f35f59) - @cjbarth
 - [Update package.json](https://github.com/cjbarth/github-release-notes/commit/f2fea79abb3300381744faed0d11ef539ddf676c) - @cjbarth
 - [Add release-it](https://github.com/cjbarth/github-release-notes/commit/5f4b37dcf1c3bb7a02f5a69b29f989cae803757c) - @cjbarth
 - [Fix tests](https://github.com/cjbarth/github-release-notes/commit/ecceb7ca1d1e80a5ba88b4fbf9863dd673b05bde) - @cjbarth
@@ -370,9 +359,48 @@ _No changelog for this release._
 
 ---
 
-## v0.3.3 (2017-03-14)
+## v0.6.3 (2017-03-14)
 
-_No changelog for this release._
+### Bug Fixes
+
+- [#48](https://github.com/github-tools/github-release-notes/issues/48) Fix multiple repo information
+
+---
+
+## v0.6.2 (2017-03-14)
+
+### Bug Fixes
+
+- [#45](https://github.com/github-tools/github-release-notes/issues/45) Remove unused option user.name
+
+---
+
+## v0.6.1 (2017-03-14)
+
+### Enhancements
+
+- [#39](https://github.com/github-tools/github-release-notes/issues/39) Use different files type for configuration
+
+### Bug Fixes
+
+- [#43](https://github.com/github-tools/github-release-notes/issues/43) Error when there is only one tag
+
+---
+
+## v0.6.0 (2017-03-14)
+
+### Enhancements
+
+- [#32](https://github.com/github-tools/github-release-notes/issues/32) Unwrap github-api promises
+- [#26](https://github.com/github-tools/github-release-notes/issues/26) Use external config file
+- [#23](https://github.com/github-tools/github-release-notes/issues/23) Introduce templates for the issues
+- [#19](https://github.com/github-tools/github-release-notes/issues/19) Add an "ignore label" flag
+- [#12](https://github.com/github-tools/github-release-notes/issues/12) Add the chance to rebuild the history of release notes
+
+### Bug Fixes
+
+- [#29](https://github.com/github-tools/github-release-notes/issues/29) Remove escaping character on regex
+- [#24](https://github.com/github-tools/github-release-notes/issues/24) The changelog action doesn't compile latest release
 
 ---
 
@@ -396,34 +424,6 @@ _No changelog for this release._
 
 ---
 
-## v0.6.1 (2017-03-14)
-
-### Enhancements
-
-- [#39](https://github.com/github-tools/github-release-notes/issues/39) Use different files type for configuration
-
-### Bug Fixes
-
-- [#43](https://github.com/github-tools/github-release-notes/issues/43) Error when there is only one tag
-
----
-
-## v0.6.2 (2017-03-14)
-
-### Bug Fixes
-
-- [#45](https://github.com/github-tools/github-release-notes/issues/45) Remove unused option user.name
-
----
-
-## v0.6.3 (2017-03-14)
-
-### Bug Fixes
-
-- [#48](https://github.com/github-tools/github-release-notes/issues/48) Fix multiple repo information
-
----
-
 ## v0.4.0 (2017-03-14)
 
 ### Enhancements
@@ -432,30 +432,13 @@ _No changelog for this release._
 
 ---
 
-## v0.6.0 (2017-03-14)
-
-### Enhancements
-
-- [#32](https://github.com/github-tools/github-release-notes/issues/32) Unwrap github-api promises
-- [#26](https://github.com/github-tools/github-release-notes/issues/26) Use external config file
-- [#23](https://github.com/github-tools/github-release-notes/issues/23) Introduce templates for the issues
-- [#19](https://github.com/github-tools/github-release-notes/issues/19) Add an "ignore label" flag
-- [#12](https://github.com/github-tools/github-release-notes/issues/12) Add the chance to rebuild the history of release notes
-
-### Bug Fixes
-
-- [#29](https://github.com/github-tools/github-release-notes/issues/29) Remove escaping character on regex
-- [#24](https://github.com/github-tools/github-release-notes/issues/24) The changelog action doesn't compile latest release
-
----
-
-## v0.2.2 (2017-03-10)
+## v0.3.3 (2017-03-14)
 
 _No changelog for this release._
 
 ---
 
-## v0.3.0 (2017-03-10)
+## v0.3.2 (2017-03-10)
 
 _No changelog for this release._
 
@@ -467,6 +450,12 @@ _No changelog for this release._
 
 ---
 
-## v0.3.2 (2017-03-10)
+## v0.3.0 (2017-03-10)
+
+_No changelog for this release._
+
+---
+
+## v0.2.2 (2017-03-10)
 
 _No changelog for this release._
