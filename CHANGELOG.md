@@ -1,11 +1,22 @@
 # Changelog
 
+## v5.1.1 (2026-09-16)
+
+### Bug Fixes:
+
+- [#17](https://github.com/cjbarth/github-release-notes/pull/17) Gather commits no release contains under an Unreleased heading
+
+---
+
 ## v5.1.0 (2026-09-16)
 
-### Other:
+### Enhancements:
+
+- [#15](https://github.com/cjbarth/github-release-notes/pull/15) Build pull request changelogs from release membership
+
+### Bug Fixes:
 
 - [#16](https://github.com/cjbarth/github-release-notes/pull/16) Fix commit pagination, check the release branch, and freeze the changelog
-- [#15](https://github.com/cjbarth/github-release-notes/pull/15) Build pull request changelogs from release membership
 
 ---
 
