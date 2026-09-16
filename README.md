@@ -54,20 +54,22 @@ The process, [as explained here](https://help.github.com/articles/creating-relea
 
 Let `gren` take care of that for you. It automates this process and also writes release notes for you, creating something like this:
 
-> ## v0.6.0 (14/03/2017)
->
-> #### Framework Enhancements
->
-> - [#32](https://github.com/github-tools/github-release-notes/issues/32) Unwrap github-api promises
-> - [#26](https://github.com/github-tools/github-release-notes/issues/26) Use external config file
-> - [#23](https://github.com/github-tools/github-release-notes/issues/23) Introduce templates for the issues
-> - [#19](https://github.com/github-tools/github-release-notes/issues/19) Add an "ignore label" flag
-> - [#12](https://github.com/github-tools/github-release-notes/issues/12) Add the chance to rebuild the history of release notes
->
-> #### Bug Fixes
->
-> - [#29](https://github.com/github-tools/github-release-notes/issues/29) Remove escaping character on regex
-> - [#24](https://github.com/github-tools/github-release-notes/issues/24) The changelog action doesn't compile latest release
+```markdown
+## v0.6.0 (14/03/2017)
+
+#### Framework Enhancements
+
+- [#32](https://github.com/github-tools/github-release-notes/issues/32) Unwrap github-api promises
+- [#26](https://github.com/github-tools/github-release-notes/issues/26) Use external config file
+- [#23](https://github.com/github-tools/github-release-notes/issues/23) Introduce templates for the issues
+- [#19](https://github.com/github-tools/github-release-notes/issues/19) Add an "ignore label" flag
+- [#12](https://github.com/github-tools/github-release-notes/issues/12) Add the chance to rebuild the history of release notes
+
+#### Bug Fixes
+
+- [#29](https://github.com/github-tools/github-release-notes/issues/29) Remove escaping character on regex
+- [#24](https://github.com/github-tools/github-release-notes/issues/24) The changelog action doesn't compile latest release
+```
 
 _(yes, this is one of_ 🤖 _'s actual releases)_
 
@@ -102,15 +104,17 @@ Even though it doesn't require a machine-readable commit, it is still better to 
 
 The output then uses commit messages (title + description) to look something like:
 
-> ## v0.9.0 (17/05/2017)
->
-> - Filter milestones (#75)
->   - Create milestones data-source option
->   - Add documentation for the milestones option
-> - Support GitHub enterprise (#73)
->   - Support GitHub enterprise
->   - Add api-url to options documentation
-> - Update CHANGELOG.md
+```markdown
+## v0.9.0 (17/05/2017)
+
+- Filter milestones (#75)
+  - Create milestones data-source option
+  - Add documentation for the milestones option
+- Support GitHub enterprise (#73)
+  - Support GitHub enterprise
+  - Add api-url to options documentation
+- Update CHANGELOG.md
+```
 
 #### Help 🤖 to write wonderful stuff (commits)
 
@@ -227,7 +231,7 @@ export GREN_GITHUB_TOKEN=your_token_here
 
 Show the internet that you use gren for automating your release notes -> [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github.com/cjbarth/github-release-notes)
 
-```
+```markdown
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github.com/cjbarth/github-release-notes)
 ```
 
@@ -320,7 +324,7 @@ pick one explicitly. A config hosted remotely (via the `gren` field in
 
 If you need help to create the configuration file, you can run the following command and follow the instructions
 
-```
+```shell
 gren init
 ```
 
