@@ -10,6 +10,9 @@ describe("_git.js", () => {
   let repo;
   let cwd;
 
+  // The fixture dates each commit a day apart, from 1 January 2020.
+  const day = (n) => new Date(Date.UTC(2020, 0, n)).toISOString();
+
   before(() => {
     repo = createReleaseRepo();
     cwd = process.cwd();
@@ -25,7 +28,7 @@ describe("_git.js", () => {
     it("Should peel annotated tags to their commit and its date", () => {
       const tags = git.tagCommits();
 
-      assert.deepEqual(tags.get("v1.0.0"), { sha: repo.sha.c1, date: "2020-01-01T00:00:00+00:00" });
+      assert.deepEqual(tags.get("v1.0.0"), { sha: repo.sha.c1, date: day(1) });
       assert.equal(tags.get("1.0.0").sha, repo.sha.c1, "A lightweight tag");
       assert.equal(tags.get("v1.2.0").sha, repo.sha.m2);
     });
@@ -57,7 +60,7 @@ describe("_git.js", () => {
       assert.deepEqual(commit, {
         sha: repo.sha.c3,
         parents: [repo.sha.c2],
-        date: "2020-01-05T00:00:00+00:00",
+        date: day(5),
         author: "Test",
         subject: "Fix bug B (#2)",
       });
@@ -76,7 +79,7 @@ describe("_git.js", () => {
 
   describe("commitDate", () => {
     it("Should return the committer date of a tag's commit", () => {
-      assert.equal(git.commitDate("v1.0.0"), "2020-01-01T00:00:00+00:00");
+      assert.equal(git.commitDate("v1.0.0"), day(1));
     });
   });
 
