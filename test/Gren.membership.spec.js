@@ -631,6 +631,19 @@ describe("Gren release membership", () => {
       assert.throws(() => gren._readChangelogSections(), /No releases could be read/);
     });
 
+    it("Should write a changelog without a run of blank lines", () => {
+      // The default templates leave two blank lines under a release heading: the release
+      // template ends with one and the group template opens with another.
+      const gren = createGren({ changelogFilename: "CHANGELOG.md", template: {} });
+
+      gren._createChangelog("## v1.0.0 (2020-01-01)\n\n\n### Bug Fixes\n\n- Fix it\n");
+
+      const written = fs.readFileSync(path.join(repo.dir, "CHANGELOG.md"), "utf-8");
+
+      assert.notMatch(written, /\n{3}/);
+      assert.include(written, "## v1.0.0 (2020-01-01)\n\n### Bug Fixes\n\n- Fix it\n");
+    });
+
     it("Should reject a value that is not a date, tag or commit", async () => {
       const gren = createGren({ frozenBefore: "not-a-ref" });
 
