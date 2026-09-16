@@ -429,6 +429,23 @@ describe("Gren release membership", () => {
       );
     });
 
+    it("Should take the unreleased heading and the empty body from the templates", async () => {
+      const gren = createGren({
+        version: "2.0.0",
+        template: { issue: "{{text}} {{name}} {{url}}", unreleased: "Nog niet uitgebracht" },
+      });
+      const blocks = await gren._getReleaseBlocks();
+
+      assert.include(
+        blocks.map(({ release }) => release),
+        "Nog niet uitgebracht",
+      );
+      assert.equal(
+        createGren({ template: { noChangelog: "_Niets te melden._" } })._templateBody([]),
+        "_Niets te melden._\n",
+      );
+    });
+
     it("Should leave out the unreleased heading when its commits have no pull request", async () => {
       // c12 is beyond every tag, but without pull request 9 there is nothing to say about it.
       const blocks = await createGren({
