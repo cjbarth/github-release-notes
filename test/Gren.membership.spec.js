@@ -41,7 +41,7 @@ describe("Gren release membership", () => {
    *
    * @return {Gren}
    */
-  const createGren = ({ remoteTags = ALL_TAGS, ...options } = {}) => {
+  const createGren = ({ remoteTags = ALL_TAGS, headSha, ...options } = {}) => {
     const gren = new Gren({
       token: "test-token",
       username: "owner",
@@ -63,6 +63,9 @@ describe("Gren release membership", () => {
       rest: {
         repos: {
           listReleases: async () => ({ headers: {}, data: [] }),
+          getBranch: async ({ branch }) => ({
+            data: { commit: { sha: headSha ?? git.commitSha(branch) } },
+          }),
           listTags: async () => ({
             data: remoteTags.map((name) => ({
               name,
@@ -507,6 +510,30 @@ describe("Gren release membership", () => {
       } catch (error) {
         assert.include(String(error), "point to different commits than on GitHub: v1.1.1");
       }
+    });
+
+    it("Should stop when the branch is at a different commit than on GitHub", async () => {
+      const gren = createGren({ headSha: "0".repeat(40) });
+
+      try {
+        await gren._getReleaseBlocks();
+        assert.fail("An unpushed branch should stop the changelog");
+      } catch (error) {
+        assert.include(String(error), 'The branch "master" is at a different commit');
+      }
+    });
+
+    it("Should not ask about the branch when the version is already tagged", async () => {
+      // Nothing is read from the branch, so it does not matter where GitHub has it.
+      const blocks = await createGren({
+        headSha: "0".repeat(40),
+        version: "2.0.0",
+      })._getReleaseBlocks();
+
+      assert.deepEqual(
+        blocks.map(({ release }) => release),
+        ["v2.0.0", "v1.2.1", "v1.2.0", "v1.1.1", "v1.1.0", "v1.0.0"],
+      );
     });
 
     it("Should stop when the local repository has a truncated history", async () => {

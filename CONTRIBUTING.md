@@ -53,7 +53,7 @@ It's easier to review the PR, if you rebase your commits so that every commit re
 
 e.g.
 
-```
+```text
 Closes #123
 
 Here any further informations needed to the reviewer, e.g. run yarn before reviewing.
