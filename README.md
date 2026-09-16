@@ -145,6 +145,7 @@ This works across release lines. For example, with 7.x on `master` and 6.x on a 
 Merge one release line into another with a merge commit. A squash merge hides the commits, and their pull requests, that it brings in.
 
 The version being prepared (from `package.json`) gets a section for the commits on `--head` that no tag contains yet.
+Once that version is tagged those commits are its own, and anything the branch gains afterwards is gathered under an `Unreleased` heading until the next version is prepared, which `template.unreleased` renames.
 
 Without `--tags`, `gren` writes that section and the latest tag `--head` contains, so on a maintenance branch it works on that line's latest release rather than on the highest version in the repository.
 `--tags=<new-tag>..<old-tag>` puts everything since the old tag in the new tag's section, taking in the releases between them.
