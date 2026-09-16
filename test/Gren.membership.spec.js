@@ -412,14 +412,57 @@ describe("Gren release membership", () => {
       assert.deepEqual(numbers(byRelease(blocks)["v1.2.0"]), [6, 5, 4, 3]);
     });
 
-    it("Should skip an unreleased version the branch has already passed", async () => {
+    it("Should gather commits no tag contains under an unreleased heading", async () => {
+      // 2.0.0 is released, and master carries c12 beyond every tag.
+      const blocks = await createGren({ version: "2.0.0" })._getReleaseBlocks();
+      const unreleased = byRelease(blocks)["Unreleased"];
+
+      assert.deepEqual(
+        blocks.map(({ release }) => release),
+        ["Unreleased", "v2.0.0", "v1.2.1", "v1.2.0", "v1.1.1", "v1.1.0", "v1.0.0"],
+      );
+      assert.deepEqual(numbers(unreleased), [9]);
+      assert.equal(
+        unreleased.name,
+        "Unreleased",
+        "The prefix belongs to a version, and it has none",
+      );
+    });
+
+    it("Should leave out the unreleased heading when the branch is level with a tag", async () => {
+      const blocks = await createGren({ head: "1.x", version: "1.2.1" })._getReleaseBlocks();
+
+      assert.deepEqual(
+        blocks.map(({ release }) => release),
+        ["v2.0.0", "v1.2.1", "v1.2.0", "v1.1.1", "v1.1.0", "v1.0.0"],
+        "Every tag still has a section; 1.x simply has nothing beyond them",
+      );
+    });
+
+    it("Should still gather them when the branch has passed the version being prepared", async () => {
+      const blocks = await createGren({ version: "1.1.5" })._getReleaseBlocks();
+
+      assert.include(
+        blocks.map(({ release }) => release),
+        "Unreleased",
+        "The work is there whatever package.json says",
+      );
+    });
+
+    it("Should say when the version being prepared is older than the branch", async () => {
       const blocks = await createGren({ version: "1.1.5" })._getReleaseBlocks();
 
       assert.notInclude(
         blocks.map(({ release }) => release),
         "1.1.5",
       );
-      assert.include(warnings.join("\n"), "Skipping the unreleased 1.1.5 section");
+      assert.include(warnings.join("\n"), "The version being prepared, 1.1.5, is older than");
+    });
+
+    it("Should say nothing when the version being prepared is simply released", async () => {
+      await createGren({ version: "2.0.0" })._getReleaseBlocks();
+
+      assert.notInclude(warnings.join("\n"), "version being prepared");
     });
 
     it("Should generate only the tag given with --tags, or the latest tag", async () => {
@@ -428,7 +471,8 @@ describe("Gren release membership", () => {
 
       assert.deepEqual(
         selected.map(({ release }) => release),
-        ["v1.1.1"],
+        ["Unreleased", "v1.1.1"],
+        "2.0.0 is released, so master's later commits have no version yet",
       );
       assert.deepEqual(
         latest.map(({ release }) => release),
@@ -523,16 +567,18 @@ describe("Gren release membership", () => {
       }
     });
 
-    it("Should not ask about the branch when the version is already tagged", async () => {
-      // Nothing is read from the branch, so it does not matter where GitHub has it.
+    it("Should not ask about a branch it has nothing to read from", async () => {
+      // 1.x is level with v1.2.1, so nothing is read from it and where GitHub has it does not
+      // matter.
       const blocks = await createGren({
         headSha: "0".repeat(40),
-        version: "2.0.0",
+        head: "1.x",
+        version: "1.2.1",
       })._getReleaseBlocks();
 
-      assert.deepEqual(
+      assert.notInclude(
         blocks.map(({ release }) => release),
-        ["v2.0.0", "v1.2.1", "v1.2.0", "v1.1.1", "v1.1.0", "v1.0.0"],
+        "Unreleased",
       );
     });
 
@@ -563,7 +609,7 @@ describe("Gren release membership", () => {
 
       try {
         // Every tag is here and points where GitHub says, but the commits between them are not.
-        await createGren({ tags: "v1.2.0", version: "1.2.0" })._getReleaseBlocks();
+        await createGren({ tags: "v1.2.0", version: "1.2.0", head: "HEAD" })._getReleaseBlocks();
         assert.fail("A shallow clone should stop the changelog");
       } catch (error) {
         assert.include(String(error), "truncated history");
