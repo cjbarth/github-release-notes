@@ -1,5 +1,14 @@
 # Changelog
 
+## v5.1.0 (2026-09-16)
+
+### Other:
+
+- [#16](https://github.com/cjbarth/github-release-notes/pull/16) Fix commit pagination, check the release branch, and freeze the changelog
+- [#15](https://github.com/cjbarth/github-release-notes/pull/15) Build pull request changelogs from release membership
+
+---
+
 ## v5.0.0 (2026-09-07)
 
 - [Keep Octokit's request logging out of normal output](https://github.com/cjbarth/github-release-notes/commit/eaaf279d3fb69e2b397b356be60ab4a5243099fa) - @cjbarth
