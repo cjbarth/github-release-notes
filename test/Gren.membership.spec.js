@@ -429,6 +429,20 @@ describe("Gren release membership", () => {
       );
     });
 
+    it("Should leave out the unreleased heading when its commits have no pull request", async () => {
+      // c12 is beyond every tag, but without pull request 9 there is nothing to say about it.
+      const blocks = await createGren({
+        version: "2.0.0",
+        overridePrs: (prs) => prs.filter(({ number }) => number !== 9),
+      })._getReleaseBlocks();
+
+      assert.notInclude(
+        blocks.map(({ release }) => release),
+        "Unreleased",
+      );
+      assert.include(warnings.join("\n"), repo.sha.c12.slice(0, 10), "It is reported instead");
+    });
+
     it("Should leave out the unreleased heading when the branch is level with a tag", async () => {
       const blocks = await createGren({ head: "1.x", version: "1.2.1" })._getReleaseBlocks();
 
