@@ -28,6 +28,7 @@ Since this package was forked, many changes have been made to support my particu
 - Because not all commits you need to track changes of have PRs (security vulnerabilities), there is an `overridePrs` config value for which you can specify PRs to be included.
   - It should return a function that returns a list of PRs.
   - It will be passed the current list of PRs.
+  - For most cases, [`commitNotes`](#commits-without-a-pull-request) describes those changes without code.
 
 ## OK, what can `gren` do for me?
 
@@ -72,7 +73,7 @@ _(yes, this is one of_ 🤖 _'s actual releases)_
 
 ## Feed `gren` 🤖
 
-Where is the data coming from? There are two options:
+Where is the data coming from? There are three main options:
 
 ### `issues` (⭐)
 
@@ -122,6 +123,88 @@ In order to have splendidly generated release notes, we recommend to follow thes
 5. Separate subject from body with a blank line
 6. Wrap the body at 72 characters
 7. Use the body to explain _what_ and _why_ not _how_
+
+### `prs`
+
+With `--data-source=prs` (or `prs-with-issues`), `gren` lists the merged pull requests in each release.
+
+#### Which pull requests are in a release
+
+A release contains the commits reachable from its tag but not from any tag with a lower version.
+Each commit belongs to the lowest release that contains it, so every release's section is the same whichever branch you run `gren` on.
+This works across release lines. For example, with 7.x on `master` and 6.x on a `6.x` branch:
+
+- 6.2.0 can be cut from `master`, or from `6.x` after merging `master` into it. The merge brings `master`'s pull requests into 6.2.0.
+- 7.0.0 then leaves out what 6.2.0 already released.
+- A 6.2.1 made after 7.0.0 lists only its own pull requests, and appears in the changelog on both branches.
+
+Merge one release line into another with a merge commit. A squash merge hides the commits, and their pull requests, that it brings in.
+
+The version being prepared (from `package.json`) gets a section for the commits on `--head` that no tag contains yet.
+
+Without `--tags`, `gren` writes that section and the latest tag `--head` contains, so on a maintenance branch it works on that line's latest release rather than on the highest version in the repository.
+`--tags=<new-tag>..<old-tag>` puts everything since the old tag in the new tag's section, taking in the releases between them.
+
+`gren` reads commits from your local clone, so fetch the tags first, e.g. `git fetch upstream --tags`.
+It stops if a tag on GitHub is missing locally or points elsewhere.
+It needs the whole history too, so run `git fetch --unshallow` in a shallow clone, and check out with `fetch-depth: 0` in GitHub Actions.
+
+#### Matching commits to pull requests
+
+A commit matches a pull request whose merge commit it is.
+The commits a merge-commit pull request brings in are covered by that pull request.
+Any other commit is looked up on GitHub, which finds rebase merges.
+
+If the project's older pull requests are in another repository, such as an upstream, a fork or where the project used to live, list it in `pullRequestRepos`:
+
+```js
+pullRequestRepos: ["node-saml/passport-saml"],
+```
+
+A cherry-pick is a new commit, so it belongs to the release that contains it and matches the pull request that merged the cherry-pick, if it had one.
+The pull request it was taken from keeps its own entry in its own release, as both releases really do contain the change.
+A cherry-pick pushed straight to a branch matches nothing, and is reported like any other commit without a pull request.
+
+#### Commits without a pull request
+
+Commits that no pull request describes, such as a security fix or a direct push, are not added to the changelog.
+`gren` prints them after generating, with entries you can copy into `commitNotes` in your [configuration file](#configuration-file):
+
+```js
+commitNotes: {
+  "8ac6118f3a": {
+    title: "Fix a signature wrapping vulnerability",
+    labels: ["security"],
+    url: "https://github.com/OWNER/REPO/security/advisories/GHSA-xxxx-xxxx-xxxx",
+    text: "GHSA-xxxx-xxxx-xxxx",
+    author: "reporter-login",
+  },
+  "ec309ec36b": {
+    pr: 330,
+  },
+},
+```
+
+Keys are commit SHAs of at least 7 characters. Every field is optional.
+An entry is placed in the release that contains its commit and grouped by its labels like a pull request.
+If the commit is a pull request's merge commit, the entry's fields replace that pull request's.
+
+`pr` points at a pull request, as `330`, `"#330"` or `"owner/repo#330"`, and the entry takes its title, labels, author and link from it.
+Use it for a cherry-pick that was pushed without a pull request of its own: the change is listed under the pull request it came from, in the release the cherry-pick landed in, and editing that pull request's title or labels still changes both releases' sections.
+If the same pull request is already in that release, the two are listed once.
+To stop a commit being reported, match it with `ignoreCommitsWith`, e.g. `["^Release \\d"]`.
+
+To fix a section, edit the pull request's title or labels, or `commitNotes`, and generate the changelog again.
+
+#### Keeping older sections
+
+Rebuilding every section can change sections you have reviewed, and early history may not have pull requests at all.
+`--frozen-before` (`frozenBefore` in the configuration file) takes a date, a tag or a commit SHA.
+Releases made before it are copied from the existing changelog as they are, matched by the version in each section's first line; newer releases are generated.
+
+```shell
+gren changelog --generate --override --data-source=prs --frozen-before=v6.0.0
+```
 
 ## Installation
 
@@ -269,6 +352,7 @@ Every option can be passed on the command line, or set in a [configuration file]
 | `-g, --group-by`            | `<label>`                                             | Group the issues using the labels as group headings. You can set custom headings for groups of labels from a configuration file.                                                                     |                        |
 | `-L, --ignore-labels`       | `<label1>,<label2>`                                   | Ignore the specified labels.                                                                                                                                                                         |                        |
 | `-I, --ignore-issues-with`  | `<label1>,<label2>`                                   | Ignore issues that contains one of the specified labels.                                                                                                                                             |                        |
+| `-R, --pull-request-repos`  | `<owner/repo1>,<owner/repo2>`                         | Other repositories to look for pull requests in, such as an upstream, a fork or where the project used to live. Only used when --data-source is prs or prs-with-issues.                              |                        |
 | `-M, --milestone-match`     | `<prefix>`                                            | The title that the script needs to match to link the release to the milestone. e.g. v will match v0.1.0 [Release {{tag_name}}]                                                                       | `Release {{tag_name}}` |
 | `-m, --only-milestones`     |                                                       | Add to the release bodies only the issues that have a milestone                                                                                                                                      |                        |
 | `-q, --quiet`               |                                                       | Run command without console logs.                                                                                                                                                                    |                        |
@@ -283,10 +367,11 @@ Every option can be passed on the command line, or set in a [configuration file]
 
 ### Changelog options
 
-| Option                     | Value           | Description                                                          | Default        |
-| -------------------------- | --------------- | -------------------------------------------------------------------- | -------------- |
-| `-G, --generate`           |                 | Generate the changelog with gren rather than using the repo releases |                |
-| `-f, --changelog-filename` | `<filename.md>` | The name of the changelog file. [CHANGELOG.md]                       | `CHANGELOG.md` |
+| Option                     | Value              | Description                                                                                                                                                                                                               | Default        |
+| -------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| `-G, --generate`           |                    | Generate the changelog with gren rather than using the repo releases                                                                                                                                                      |                |
+| `-f, --changelog-filename` | `<filename.md>`    | The name of the changelog file. [CHANGELOG.md]                                                                                                                                                                            | `CHANGELOG.md` |
+| `-F, --frozen-before`      | `<date\|tag\|sha>` | Copy the sections of releases made before this date, or before this tag's or commit's date, from the existing changelog instead of generating them. Only used with --generate and the prs or prs-with-issues data source. |                |
 
 <!-- GREN-OPTIONS:END -->
 
