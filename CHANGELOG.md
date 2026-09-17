@@ -1,5 +1,16 @@
 # Changelog
 
+## v5.2.0 (2026-09-17)
+
+### Other:
+
+- [#21](https://github.com/cjbarth/github-release-notes/pull/21) Assert the debug output's value, not its colour
+- [#20](https://github.com/cjbarth/github-release-notes/pull/20) Keep the token out of the debug output
+- [#19](https://github.com/cjbarth/github-release-notes/pull/19) Read the config file --config names
+- [#18](https://github.com/cjbarth/github-release-notes/pull/18) Read a frozen changelog whose title is not the configured one
+
+---
+
 ## v5.1.1 (2026-09-16)
 
 ### Bug Fixes:
