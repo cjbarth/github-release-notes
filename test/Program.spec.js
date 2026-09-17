@@ -1,5 +1,8 @@
 import { assert } from "chai";
 import Program from "../lib/src/Program.js";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 
 describe("Program", () => {
   const testCommand = new Program({
@@ -161,6 +164,50 @@ describe("Program", () => {
       assert.isObject(testCommand._consumeOptions(false), "Passing false");
       assert.isObject(testCommand._consumeOptions("string"), "Passing a string");
       assert.isObject(testCommand._consumeOptions(true), "Passing true");
+    });
+  });
+
+  describe("config", () => {
+    const options = [
+      { short: "-c", name: "config", valueType: "<string>", description: "Custom config" },
+    ];
+    let cwd;
+
+    before(() => {
+      cwd = fs.mkdtempSync(path.join(os.tmpdir(), "gren-config-"));
+      fs.writeFileSync(path.join(cwd, ".grenrc"), JSON.stringify({ repo: "from-the-default" }));
+      fs.writeFileSync(path.join(cwd, "custom.json"), JSON.stringify({ repo: "from-the-custom" }));
+    });
+
+    after(() => {
+      fs.rmSync(cwd, { recursive: true, force: true });
+    });
+
+    const program = (argv) =>
+      new Program({ name: "Test", description: "This is a test", options, argv, cwd });
+
+    it("Should read the file --config names", () => {
+      assert.equal(
+        program(["node", "gren", "--config", "custom.json"]).options.repo,
+        "from-the-custom",
+      );
+    });
+
+    it("Should read the file -c names", () => {
+      assert.equal(program(["node", "gren", "-c", "custom.json"]).options.repo, "from-the-custom");
+    });
+
+    it("Should fall back to the conventional filenames", () => {
+      assert.equal(program(["node", "gren"]).options.repo, "from-the-default");
+    });
+
+    it("Should stop when --config names a file that is not there", () => {
+      // Silently using another file would build the changelog from a configuration the user
+      // did not ask for, and the output would look like a bug in gren.
+      assert.throws(
+        () => program(["node", "gren", "--config", "not-there.json"]),
+        /Could not find custom config file/,
+      );
     });
   });
 
