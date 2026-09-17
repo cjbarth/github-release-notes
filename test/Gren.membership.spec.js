@@ -707,6 +707,42 @@ describe("Gren release membership", () => {
       });
     });
 
+    it("Should read the first release under a title the configuration does not spell", () => {
+      // A banner, or any title edited since the file was written, is still title. Keying the
+      // first section off the configured changelogTitle alone leaves the leftover preamble
+      // attached to the release under it, and that release is then dropped from the file the
+      // next run writes.
+      fs.writeFileSync(
+        path.join(repo.dir, "CHANGELOG.md"),
+        "# Changelog\n\n> Sponsor this project.\n\n" + Object.values(sections).join(separator),
+      );
+
+      const gren = createGren({ frozenBefore: "2020-01-16", changelogFilename: "CHANGELOG.md" });
+      const read = gren._readChangelogSections();
+
+      assert.equal(read.get("2.0.0"), sections["2.0.0"]);
+      assert.equal(read.get("1.2.0"), sections["1.2.0"]);
+    });
+
+    it("Should read the first release under an unknown title without a separator", () => {
+      const plain = { "2.0.0": sections["2.0.0"], "1.2.0": sections["1.2.0"] };
+
+      fs.writeFileSync(
+        path.join(repo.dir, "CHANGELOG.md"),
+        "Release history\n===============\n\n" + Object.values(plain).join(""),
+      );
+
+      const gren = createGren({
+        frozenBefore: "2020-01-16",
+        changelogFilename: "CHANGELOG.md",
+        template: { releaseSeparator: "" },
+      });
+      const read = gren._readChangelogSections();
+
+      assert.equal(read.get("2.0.0"), plain["2.0.0"]);
+      assert.equal(read.get("1.2.0"), plain["1.2.0"]);
+    });
+
     it("Should read a changelog with nothing between its releases", async () => {
       const plain = { "2.0.0": sections["2.0.0"], "1.2.0": sections["1.2.0"] };
 
