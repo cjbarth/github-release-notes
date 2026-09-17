@@ -765,6 +765,27 @@ describe("Gren release membership", () => {
       assert.throws(() => createGren({ pullRequestRepos: ["just-a-name"] }), /owner\/repo/);
     });
 
+    it("Should not print the token in the debug output", () => {
+      // --debug is the first thing anyone turns on in CI, and a build log is not a private
+      // place to keep a credential that can write to the repository.
+      const written = [];
+      const { write } = process.stdout;
+
+      process.stdout.write = (chunk) => written.push(String(chunk));
+
+      try {
+        createGren({ debug: true, token: "ghp_averysecrettoken" });
+      } finally {
+        process.stdout.write = write;
+      }
+
+      const output = written.join("");
+
+      assert.notInclude(output, "ghp_averysecrettoken", "The token is not in the output");
+      assert.include(output, "Token:", "The option is still reported");
+      assert.include(output, "Repo: current", "The other options are still reported");
+    });
+
     it("Should reject commitNotes keys that are not commit SHAs", () => {
       assert.throws(() => createGren({ commitNotes: { abc: {} } }), /at least 7 characters/);
     });
