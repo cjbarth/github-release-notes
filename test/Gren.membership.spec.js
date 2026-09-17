@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+import { stripVTControlCharacters } from "node:util";
 import Gren from "../lib/src/Gren.js";
 import * as git from "../lib/src/_git.js";
 import { createReleaseRepo } from "./fixtures/release-repo.js";
@@ -815,10 +816,13 @@ describe("Gren release membership", () => {
         process.stdout.write = write;
       }
 
-      const output = written.join("");
+      // chalk colours the option names only when stdout is a terminal, so the run that
+      // matters -- a maintainer's, by hand -- is the one an assertion on the escape codes
+      // would fail. Assert the value, not the spelling it arrived in.
+      const output = stripVTControlCharacters(written.join(""));
 
       assert.notInclude(output, "ghp_averysecrettoken", "The token is not in the output");
-      assert.include(output, "Token:", "The option is still reported");
+      assert.include(output, "Token: <hidden>", "The option is still reported");
       assert.include(output, "Repo: current", "The other options are still reported");
     });
 
